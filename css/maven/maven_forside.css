@@ -12,3 +12,10 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.start{
+    position: absolute;  
+    top: 82%;    
+    left: 40%;          
+    width: 20rem;
+}
