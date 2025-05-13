@@ -12,3 +12,16 @@ body{
     height: 100vh;
     margin: 0;
 }
+.højre {
+    position: absolute;  
+    top: 50%;    
+    left: 82%;          
+    width: 20rem;
+}
+
+.venstre {
+    position: absolute;  
+    top: 50%;    
+    right: 82%;          
+    width: 20rem;
+}
