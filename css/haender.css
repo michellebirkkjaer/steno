@@ -65,3 +65,10 @@
 .tilbage_forside_knap:hover {
     transform: scale(1.05);
 }
+
+.gå_til_spil_knap {
+    position: absolute;  
+    top: 65%;    
+    left: 60%;          
+    width: 12rem;
+}
