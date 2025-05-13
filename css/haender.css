@@ -49,3 +49,19 @@
     padding: 2rem;
     border-radius: 1rem;
 }
+
+/* Generelt */
+
+.tilbage_forside_knap{
+    position: absolute;
+    top: 55rem;
+    left: 1rem;
+    width: 14rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.tilbage_forside_knap:hover {
+    transform: scale(1.05);
+}
