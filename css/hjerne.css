@@ -5,10 +5,18 @@
 }
 
 body{
-    background-image: url('/img/maven/maveside_dagbog.webp');
+    background-image: url('/img/hjernen/dagbog.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
 }
+
+.start-spillet {
+    position: absolute;
+    top: 48rem;
+    left: 56rem;
+    width: 15rem;
+    height: auto;
+  }

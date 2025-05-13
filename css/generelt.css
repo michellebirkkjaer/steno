@@ -1,0 +1,14 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tilbage-forside{
+    position: absolute;
+    top: 56rem;
+    left: 1rem;
+    width: 14rem;
+    height: auto;
+}
