@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
  
     // Finder luk-knappen
  const lukKnap = document.getElementById("luk_knap");
+
+    const okKnap = document.getElementById("ok_knap");
+    const svarInput = document.getElementById("svar_input");
+    const forkertOverlay = document.getElementById("forkert_overlay");
   
     // Når brugeren klikker på knappen, fjernes 'hidden'-attributten
     // Så vises overlayet på siden
@@ -22,7 +26,25 @@ document.addEventListener("DOMContentLoaded", () => {
 lukKnap.addEventListener("click", () => {
     overlayBillede.setAttribute("hidden", true);
   });
+
+// Tjek svaret
+okKnap.addEventListener("click", () => {
+const brugerSvar = svarInput.value.trim();
+const korrektSvar = "122";
+
+if (brugerSvar === korrektSvar) {
+    // Hvis korrekt, send brugeren videre til ny side
+    window.location.href = "rigtigt_svar.html";
+} else {
+    // Hvis forkert, vis forkert-overlay
+    forkertOverlay.removeAttribute("hidden");
+}
 });
 
-
+// "Prøv igen" lukker forkert-overlay
+provIgenKnap.addEventListener("click", () => {
+forkertOverlay.setAttribute("hidden", true);
+svarInput.value = "";
+});
+});
   

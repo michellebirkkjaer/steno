@@ -130,3 +130,19 @@
 #ok_knap img {
     width: 7rem;
 }
+
+/* Forkert svar - Prøv igen knappen */
+.prov_igen_knap {
+    background-color: #337ab7; /* blå farve */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .blå-knap:hover {
+    background-color: #286090;
+  }
