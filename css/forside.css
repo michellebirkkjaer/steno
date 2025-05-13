@@ -112,7 +112,7 @@
   #hjerneimg{
     width: 15rem;
     margin-left: 30rem;
-    margin-top: 5rem;
+    margin-top: 7rem;
     animation: waveHand2 4s ease-in-out infinite;
   }
 
@@ -141,7 +141,9 @@
   }
 
   #overlay-text {
-    font-size: 4rem;
+    font-size: 6rem;
+    font-family: Swanky and Moo Moo;
+    text-transform: uppercase;
     font-weight: 700;
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.6);
