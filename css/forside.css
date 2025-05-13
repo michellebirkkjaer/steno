@@ -70,6 +70,30 @@
     outline: 3px solid #0078d7;
     outline-offset: 3px;
   }
+
+  #haandimg{
+    width: 18rem;
+    margin-bottom: 19rem;
+    margin-left: 3rem;
+  }
+
+  #hjerteimg{
+    width: 13rem;
+    margin-left: 11rem;
+  }
+
+  #hjerneimg{
+    width: 15rem;
+    margin-left: 30rem;
+    margin-top: 5rem;
+  }
+
+  #mavenimg {
+    width: 16rem;
+    margin-left: 22rem;
+  }
+
+
   /* Overlay styling */
   #overlay {
     position: absolute;
