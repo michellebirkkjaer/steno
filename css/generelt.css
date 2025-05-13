@@ -1,0 +1,20 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tilbage-forside{
+    position: absolute;
+    top: 56rem;
+    left: 1rem;
+    width: 14rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.tilbage-forside:hover {
+    transform: scale(1.05);
+}

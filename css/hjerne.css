@@ -4,8 +4,32 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url('/img/maven/maveside_dagbog.webp');
+.hjernen_dagbog_body{
+    background-image: url('/img/hjernen/dagbog.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.start-spillet {
+    position: absolute;
+    top: 48rem;
+    left: 56rem;
+    width: 15rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.start-spillet:hover {
+    transform: scale(1.05);
+}
+
+
+.hjernen_regnestykke1_body{
+    background-image: url('/img/hjernen/regnestykke1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
