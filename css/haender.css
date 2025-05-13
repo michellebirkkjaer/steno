@@ -4,11 +4,32 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url('/img/haender/haender_dagbog.webp');
+.haender_dagbog_body {
+    background-image: url('/img/haender/haandside_dagbog.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
 }
+
+.haender_opgave_body {
+    background-image: url('/img/haender/haandside_opgavebeskrivelse.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.haender_dagbog_overskrift {
+    font-family: "Sedgwick Ave Display";
+    font-weight: 100;
+    margin: 0;
+    padding-top: 3rem;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
