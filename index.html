@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="css/forside.css">
 </head>
 <body>
-    
+    <div id="container" role="main" aria-label="Background with overlay and navigation buttons">
+        <img id="background-image" src="img/forside/baggrundsbillede.png" alt="Background scenic view" />
+        <div id="buttons" role="navigation" aria-label="Navigation buttons">
+            <a href="undersider/hjerte.html" tabindex="0" aria-label="Link to Page 1">
+              <img class="button-img" src="img/forside/hjerte.webp" alt="Small image 1"/>
+            </a>
+            <a href="undersider/hjernen.html" tabindex="0" aria-label="Link to Page 2">
+              <img class="button-img" src="img/forside/hjerne.webp" alt="Small image 2"/>
+            </a>
+            <a href="undersider/haender/haender-1.html" tabindex="0" aria-label="Link to Page 3">
+              <img class="button-img" src="img/forside/haand.webp" alt="Small image 3"/>
+            </a>
+            <a href="undersider/maven.html" tabindex="0" aria-label="Link to Page 4">
+              <img class="button-img" src="img/forside/maven.webp" alt="Small image 4"/>
+            </a>
+        </div>
+        <div id="overlay" role="button" aria-label="Click to remove overlay" tabindex="0">
+            <span id="overlay-text">Klik her</span>
+        </div>
+    </div>
+    <script src="features/overlay.js">
 </body>
 </html>
