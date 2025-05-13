@@ -90,8 +90,8 @@
 }
   #haandimg{
     width: 18rem;
-    margin-bottom: 19rem;
-    margin-left: 3rem;
+    margin-bottom: 27rem;
+    margin-left: 0;
     animation: waveHand 3s ease-in-out infinite; /* Animerer konstant med vink */
   }
 

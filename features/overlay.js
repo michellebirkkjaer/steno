@@ -37,4 +37,3 @@ overlay.addEventListener('keydown', (e) => { //Lytter efter tastetryk, mens over
     removeOverlay(); //Kalder removeOverlay() ved tastetryk – samme funktionalitet som ved klik.
   }
 });
-
