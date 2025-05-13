@@ -25,3 +25,17 @@ body{
     right: 82%;          
     width: 20rem;
 }
+
+.afslut{
+    position: absolute;  
+    top: 85%;    
+    right: 80%;          
+    width: 15rem;
+}
+
+.gaet{
+    position: absolute;  
+    top: 85%;    
+    left: 80%;          
+    width: 15rem;
+}

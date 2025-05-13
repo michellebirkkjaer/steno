@@ -12,3 +12,10 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.gaa_til_spil{
+    position: absolute;  
+    top: 70%;    
+    left: 57%;          
+    width: 15rem;
+}
