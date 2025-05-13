@@ -19,15 +19,18 @@
     </a>
 </section>
 
+<!-- Button til indtast knap  -->
 <section>
-    <a href="">
-    <img src="/img/hjernen/indtast_svar_knap.webp" alt="Stykke tape med indtast svar" class="indtast_svar_knap">
-    </a>
-</section>
+    <button id="indtast_knap" aria-label="Indtast svar">
+      <img src="/img/hjernen/indtast_svar_knap.webp" alt="Stykke tape med indtast svar" class="indtast_svar_knap">
+    </button>
+  </section>
 
 <!-- Overlay -->
+<section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
+    <img src="/img/hjernen/indtast_svar_bog.webp" alt="En side i en bog hvor man indtaster sit svar svar" class="overlay_indtast_svar"/>
+  </section>
 
-
-<script src="script.js"></script>
+<script src="/features/indtast_svar.js" ></script>
 </body>
 </html>

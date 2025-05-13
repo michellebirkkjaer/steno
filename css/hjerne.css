@@ -54,3 +54,25 @@
 }
 
 /* Overlayet */
+#overlay_billede {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* lidt gennemsigtig baggrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* læg det øverst */
+  }
+  
+  #overlay_billede[hidden] {
+    display: none !important;
+  }
+
+  .overlay_indtast_svar {
+    max-width: 52%;
+    height: auto;
+  }
+  
