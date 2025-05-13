@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.tilbage-forside{
+.tilbage_forside_knap{
     position: absolute;
     top: 56rem;
     left: 1rem;
@@ -15,6 +15,20 @@
     transition: transform 0.2s ease;
 }
 
-.tilbage-forside:hover {
+.tilbage_forside_knap:hover {
+    transform: scale(1.05);
+}
+
+.afslut_spil_knap{
+    position: absolute;
+    top: 55rem;
+    left: 2rem;
+    width: 14rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.afslut_spil_knap:hover {
     transform: scale(1.05);
 }

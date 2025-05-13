@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+/* Første side */
 .hjernen_dagbog_body{
     background-image: url('/img/hjernen/dagbog.webp');
     background-size: cover;
@@ -13,7 +15,7 @@
     margin: 0;
 }
 
-.start-spillet {
+.start_spillet_knap {
     position: absolute;
     top: 48rem;
     left: 56rem;
@@ -23,11 +25,11 @@
     transition: transform 0.2s ease;
 }
 
-.start-spillet:hover {
+.start_spillet_knap:hover {
     transform: scale(1.05);
 }
 
-
+/* Anden side */
 .hjernen_regnestykke1_body{
     background-image: url('/img/hjernen/regnestykke1.webp');
     background-size: cover;
@@ -35,4 +37,18 @@
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0;
+}
+
+.indtast_svar_knap{
+    position: absolute;
+    top: 53rem;
+    left: 70rem;
+    width: 22rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.indtast_svar_knap:hover {
+    transform: scale(1.05);
 }
