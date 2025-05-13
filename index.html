@@ -13,8 +13,12 @@
 </head>
 <body>
     <div id="container" role="main" aria-label="Background with overlay and navigation buttons">
+        <!-- role="main" fortæller hjælpemidler, at dette er hovedindholdet på siden -->
+        <!-- aria-label giver en beskrivelse af indholdet for skærmlæsere -->
         <img id="background-image" src="img/forside/baggrundsbillede.png" alt="Background scenic view" />
         <div id="buttons" role="navigation" aria-label="Navigation buttons">
+         <!-- role="navigation" fortæller skærmlæsere, at dette er en navigationssektion -->
+        <!-- aria-label beskriver, at det er navigationsknapper -->
             <a href="undersider/hjerte.html" tabindex="0" aria-label="Link to Page 1">
               <img class="button-img" src="img/forside/hjerte.webp" alt="Small image 1" id="hjerteimg"/>
             </a>
@@ -29,6 +33,9 @@
             </a>
         </div>
         <div id="overlay" role="button" aria-label="Click to remove overlay" tabindex="0">
+             <!-- tabindex="0" gør linket tilgængeligt via tastatur-navigation. -->
+             <!-- aria-label beskriver linket for skærmlæsere -->
+             <!-- role="button" angiver, at det fungerer som en knap -->
             <span id="overlay-text">Klik her</span>
         </div>
     </div>
