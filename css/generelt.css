@@ -11,4 +11,10 @@
     left: 1rem;
     width: 14rem;
     height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.tilbage-forside:hover {
+    transform: scale(1.05);
 }
