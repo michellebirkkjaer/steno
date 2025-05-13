@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-img{
-width: 100%;
-height: 100%;
+body{
+    background-image: url('/img/maven/maveside_dagbog.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
