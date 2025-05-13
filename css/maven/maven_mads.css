@@ -39,3 +39,39 @@ body{
     left: 80%;          
     width: 15rem;
 }
+
+.hidden {
+    display: none !important;
+  }
+  
+  #popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .popup-content input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+  }
+  
+  .popup-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+  }

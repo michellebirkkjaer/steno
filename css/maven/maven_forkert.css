@@ -12,3 +12,15 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.button1 {
+    font-size: 10rem;
+    /* font-family: */
+    border-radius: 100%;
+    padding: 2vh 3vw;
+    background-color: red;
+    color: white !important;
+    border: 2px solid white;
+    transition-duration: 0.4s;
+    z-index: 1; /* Sørger for, at knappen er foran baggrunden */
+}
