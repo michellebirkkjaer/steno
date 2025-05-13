@@ -29,7 +29,27 @@
 <!-- Overlay -->
 <section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
     <img src="/img/hjernen/indtast_svar_bog.webp" alt="En side i en bog hvor man indtaster sit svar svar" class="overlay_indtast_svar"/>
-  </section>
+
+    <!-- Interaktiv form ovenpå -->
+    <form id="svar_form">
+    <label for="bruger_svar" hidden>Indtast svar</label>
+
+    <!-- Inputfelt -->
+    <input type="number" id="bruger_svar" name="bruger_svar" required placeholder="Skriv dit svar her" />
+
+    <!-- OK-knap som billede -->
+    <button type="submit" id="ok_knap" aria-label="Bekræft svar">
+      <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
+    </button>
+
+    <!-- Luk-knap som billede -->
+    <button type="button" id="luk_knap" aria-label="Luk overlay">
+      <img src="/img/hjernen/kryds.webp" alt="Luk" />
+    </button>
+  </form>
+</section>
+
+</section>
 
 <script src="/features/indtast_svar.js" ></script>
 </body>
