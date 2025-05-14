@@ -48,3 +48,14 @@ provIgenKnap.addEventListener("click", () => {
   location.reload(); // Genindlæs siden fra starten
 });
 });
+
+
+window.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("afslut_knappen").addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
+
+  document.getElementById("start_igen_knap").addEventListener("click", function () {
+    window.location.href = "hjernen_1.html";
+  });
+});

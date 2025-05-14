@@ -69,9 +69,6 @@
     width: 85%;
     display: block;
     margin: 0 auto;
-}
-
-.flyvende_effekt {
     animation: cirkelSvaev 10s linear infinite;
     position: relative;
     will-change: transform;
@@ -128,24 +125,45 @@
     line-height: 5rem;
 }
 
-.haender_spørgsmaalstegn_sektion {
-    padding-top: 4rem;
+.haender_sporgsmaalstegn_sektion {
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
 }
 
-.haender_spørgsmaalstegn_sektion img {
+.haender_sporgsmaalstegn_sektion img {
     height: auto;
     object-fit: contain;
 }
 
 .pink {
-    width: 10%;
+    margin-top: 8rem;
+    width: 12%;
+    animation-delay: 0s;
 }
 
 .grå {
-    width: 30%;
+    width: 12%;
+    margin-bottom: 10rem;
+    animation-delay: 0.7s;
 }
+
+.blå {
+    margin-top: 10rem;
+    margin-left: 4rem;
+    animation-delay: 1.3s;
+}
+
+.sporgsmaalstegn {
+    animation: tilt 5s ease-in-out infinite;
+}
+@keyframes tilt {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(7deg); }
+        50% { transform: rotate(-5deg); }
+        75% { transform: rotate(5deg); }
+}
+
 /* Hænder resultatside */
 
 .haender_resultat_body {
@@ -155,6 +173,9 @@
     background-repeat: no-repeat;
     height: 100vh;
     margin-top: 2rem;
+}
+.haender_resultat_elementer {
+    margin-top: 3rem;
 }
 
 .haender_resultat_overskrift {
