@@ -35,7 +35,7 @@ okKnap.addEventListener("click", (event) => {
   const korrektSvar = "74";
 
   if (brugerSvar === korrektSvar) {
-    window.location.href = "#";
+    window.location.href = "hjerne_4.html";
   } else {
     forkertOverlay.removeAttribute("hidden");
   }
