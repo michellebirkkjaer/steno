@@ -51,22 +51,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   
   // Tjek svaret
-  okKnap.addEventListener("click", () => {
-  const brugerSvar = svarInput.value.trim();
-  const korrektSvar = "Villads";
+  okKnap.addEventListener("click", (event) => {
+    event.preventDefault(); // <-- Dette stopper formen i at genindlæse siden
   
-  if (brugerSvar === korrektSvar) {
-      // Hvis korrekt, send brugeren videre til ny side
-      window.location.href = "maven_korrekt.html";
-  } else {
-      // Hvis forkert, vis forkert-overlay
-      window.location.href = 'maven_forkert.html';
-  }
+    const brugerSvar = svarInput.value.trim();
+    //sikrer at brugeren får korrekt svar, selv hvis der er stavefejl i "Villads"
+    const korrektSvar = ["Villads", "villads", "vilads", "Vilads", "villas", "Villas"];
+  
+    if (brugerSvar === korrektSvar) {
+        window.location.href = "maven_korrekt.html";
+    } else {
+        window.location.href = 'maven_forkert.html';
+    }
   });
+//   okKnap.addEventListener("click", () => {
+//   const brugerSvar = svarInput.value.trim();
+//   const korrektSvar = "Villads";
+  
+//   if (brugerSvar === korrektSvar) {
+//       // Hvis korrekt, send brugeren videre til ny side
+//       window.location.href = "maven_korrekt.html";
+//   } else {
+//       // Hvis forkert, vis forkert-overlay
+//       window.location.href = 'maven_forkert.html';
+//   }
+//   });
   
   // "Prøv igen" lukker forkert-overlay
-  provIgenKnap.addEventListener("click", () => {
-  forkertOverlay.setAttribute("hidden", true);
-  svarInput.value = "";
-  });
+//   provIgenKnap.addEventListener("click", () => {
+//   forkertOverlay.setAttribute("hidden", true);
+//   svarInput.value = "";
+//   });
   });
