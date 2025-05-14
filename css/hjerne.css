@@ -131,18 +131,32 @@
     width: 7rem;
 }
 
+/* Forkert svar billedet*/
+.forkert_overlay{
+  position: relative;
+  left: 2rem;
+  z-index: 3;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+}
+
 /* Forkert svar - Prøv igen knappen */
 .prov_igen_knap {
-    background-color: #337ab7; /* blå farve */
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 30px;
-    font-size: 16px;
-    margin-top: 15px;
-    cursor: pointer;
-  }
+  position: absolute;
+  padding: 0.6rem 3rem;
+  background-color: #576D8C;
+  color: white;
+  border: none;
+  border-radius: 10rem;
+  font-family: "The Girl Next Door", cursive;
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 4;
+  top: 54%;
+  left: 46%;
+}
   
-  .blå-knap:hover {
+.blå-knap:hover {
     background-color: #286090;
   }

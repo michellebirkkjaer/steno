@@ -7,3 +7,31 @@
     height: 100vh;
     margin: 0;
 }
+
+.indtastsvarknap{
+    position: absolute;
+    top: 53rem;
+    left: 70rem;
+    width: 22rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.indtastsvarknap:hover {
+    transform: scale(1.05);
+}
+
+.afslut_spil_knap{
+    position: absolute;
+    top: 55rem;
+    left: 2rem;
+    width: 14rem;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.afslut_spil_knap:hover {
+    transform: scale(1.05);
+}
