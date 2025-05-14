@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const overlayBillede = document.getElementById("overlay_billede");
  
     // Finder luk-knappen
- const lukKnap = document.getElementById("luk_knap");
+    const lukKnap = document.getElementById("luk_knap");
 
     const okKnap = document.getElementById("ok_knap");
     const svarInput = document.getElementById("svar_input");
     const forkertOverlay = document.getElementById("forkert_overlay");
   
-    // Når brugeren klikker på knappen, fjernes 'hidden'-attributten
-    // Så vises overlayet på siden
-    indtastKnap.addEventListener("click", () => {
-      overlayBillede.removeAttribute("hidden");
-    });
+// Når brugeren klikker på knappen, fjernes 'hidden'-attributten
+// Så vises overlayet på siden
+indtastKnap.addEventListener("click", () => {
+  overlayBillede.removeAttribute("hidden");
+});
  
 // Skjul overlay når man klikker på luk-knappen
 lukKnap.addEventListener("click", () => {
@@ -35,16 +35,16 @@ okKnap.addEventListener("click", (event) => {
   const korrektSvar = "122";
 
   if (brugerSvar === korrektSvar) {
-    window.location.href = "rigtigt_svar.html";
+    window.location.href = "hjerne-3.html";
   } else {
     forkertOverlay.removeAttribute("hidden");
   }
 });
 
-// "Prøv igen" lukker forkert-overlay
+// Det her er prøv igen knappen som sendes til den pågældene side
+const provIgenKnap = document.getElementById("prov_igen_knap");
+
 provIgenKnap.addEventListener("click", () => {
-forkertOverlay.setAttribute("hidden", true);
-svarInput.value = "";
+  location.reload(); // Genindlæs siden fra starten
 });
 });
-  
