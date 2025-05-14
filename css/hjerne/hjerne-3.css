@@ -48,8 +48,12 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    top: 20rem;
+    top: 25rem;
     z-index: 1;
+}
+
+section img{
+    margin: 1rem;
 }
 
 .linje1{
@@ -57,7 +61,7 @@
     justify-content: center;
     align-items: center;
 }
-.linje1 img{
+.linje1 .tal{
     width: 12rem;
 }
 
@@ -66,10 +70,10 @@
     justify-content: center;
     align-items: center;
 }
-.linje2 img{
+.linje2 .tal{
     width: 7rem;
 }
 
 .tegn{
-    width: ;
+    width: 6rem;
 }
