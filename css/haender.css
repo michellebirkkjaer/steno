@@ -129,6 +129,7 @@
 }
 
 .haender_spørgsmaalstegn_sektion {
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
 }
@@ -138,7 +139,6 @@
     object-fit: contain;
 }
 
-
 .pink {
     width: 10%;
 }
@@ -146,7 +146,27 @@
 .grå {
     width: 30%;
 }
+/* Hænder resultatside */
 
+.haender_resultat_body {
+    background-image: url('/img/haender/baggrund_penalhus.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+.haender_resultat_overskrift {
+    font-family: "Sedgwick Ave Display";
+    font-weight: 100;
+    margin: 0;
+    padding-top: 3rem;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
 
 /* Generelle knapper */
 
