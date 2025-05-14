@@ -28,17 +28,17 @@ lukKnap.addEventListener("click", () => {
   });
 
 // Tjek svaret
-okKnap.addEventListener("click", () => {
-const brugerSvar = svarInput.value.trim();
-const korrektSvar = "122";
+okKnap.addEventListener("click", (event) => {
+  event.preventDefault(); // Stopper siden fra at reloade
 
-if (brugerSvar === korrektSvar) {
-    // Hvis korrekt, send brugeren videre til ny side
+  const brugerSvar = svarInput.value.trim();
+  const korrektSvar = "122";
+
+  if (brugerSvar === korrektSvar) {
     window.location.href = "rigtigt_svar.html";
-} else {
-    // Hvis forkert, vis forkert-overlay
+  } else {
     forkertOverlay.removeAttribute("hidden");
-}
+  }
 });
 
 // "Prøv igen" lukker forkert-overlay
