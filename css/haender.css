@@ -52,6 +52,10 @@
     border-radius: 1rem;
 }
 
+.markeret {
+    text-decoration: underline;
+}
+
 /* Hænder penalhussside */
 
 .haender_penalhus_body {
