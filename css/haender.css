@@ -133,6 +133,12 @@
     justify-content: center;
 }
 
+.haender_spørgsmaalstegn_sektion img {
+    height: auto;
+    object-fit: contain;
+}
+
+
 .pink {
     width: 10%;
 }
