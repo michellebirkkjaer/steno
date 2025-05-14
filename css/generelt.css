@@ -7,7 +7,7 @@
 
 .tilbage_forside_knap{
     position: absolute;
-    top: 54rem;
+    top: 45rem;
     left: 1rem;
     width: 14rem;
     height: auto;
@@ -21,8 +21,8 @@
 
 .afslut_spil_knap{
     position: absolute;
-    top: 55rem;
-    left: 2rem;
+    top: 51rem;
+    left: 2.1rem;
     width: 14rem;
     height: auto;
     cursor: pointer;

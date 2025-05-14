@@ -4,7 +4,7 @@
 
 // Vent med at køre JavaScript, indtil hele HTML'en er indlæst
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     // Find knappen, som brugeren klikker på for at vise overlayet
       const indtastKnap = document.getElementById("submitGuess");
     
@@ -41,6 +41,16 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "maven_korrekt.html";
     } else {
         window.location.href = 'maven_forkert.html';
+    }
+  });
+  
+  const formElement = document.getElementById("svar_form");
+  const billedeElement = document.querySelector(".overlay_indtast_navn");
+  
+  overlayBillede.addEventListener("click", (event) => {
+    // Luk kun hvis klik ikke er inde i form eller billedet
+    if (!formElement.contains(event.target) && !billedeElement.contains(event.target)) {
+      overlayBillede.setAttribute("hidden", true);
     }
   });
 

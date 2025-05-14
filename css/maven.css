@@ -22,7 +22,7 @@
 }
 
 .gaa_til_spil:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* forside */
@@ -43,7 +43,7 @@
 }
 
 .start:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Mads */
@@ -114,7 +114,7 @@
     width: 15rem;
 }
 .afslut_spil:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .gaet{
@@ -124,7 +124,7 @@
     width: 15rem;
 } 
 .gaet:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 
@@ -205,6 +205,10 @@
 
 #ok_knap img {
     width: 7rem;
+}
+
+#ok_knap:hover{
+  transform: scale(1.05);
 }
 
 /* Forkert svar - Prøv igen knappen */
