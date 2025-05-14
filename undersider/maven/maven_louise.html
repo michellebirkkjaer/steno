@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/maven/maven_louise.css">
+     <link rel="stylesheet" href="/css/maven.css">
     <title>Document</title>
 </head>
 <body>
+  <section class="louise">
     <a href="/undersider/maven/maven_villads.html">
     <img src="/img/maven/pil_højre.webp" alt="pil" class="højre">
     </a>
@@ -14,16 +15,44 @@
     <a href="/undersider/maven/maven_mads.html">
     <img src="/img/maven/pil_venstre.webp" alt="pil" class="venstre">
     </a>
+</section>
 
     <section class="knapper">
         <a href="/index.html">
-          <img src="/img/generelt/afslut_spil_knap.webp" alt="afslut spil knap" class="afslut">
+          <img src="/img/generelt/afslut_spil_knap.webp" alt="afslut spil knap" class="afslut_spil">
         </a>
     
-        <!-- lav til en popup med javascript -->
-        <button> 
-          <img src="/img/generelt/gaet_her_knap.webp" alt="gaet her knap" class="gaet">
-        </button>
+         <!-- Knap til at indtaste navn  -->
+<section class="popup">
+  <button id="submitGuess" aria-label="Indtast navn">
+    <img src="/img/generelt/gaet_her_knap.webp" alt="Stykke tape med gæt her" class="gaet">
+  </button>
+</section>
+
+<!-- Overlay -->
+<section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
+  <img src="/img/maven/overlay_pop up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn"/>
+
+  <!-- formen hvor brugeren indtaster svar -->
+  <form id="svar_form">
+  <label for="bruger_svar" hidden>Indtast svar</label>
+
+  <!-- Inputfelt -->
+  <input type="text" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
+
+  <!-- OK-knappen -->
+  <button type="submit" id="ok_knap" aria-label="Bekræft svar">
+    <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
+  </button>
+
+  <!-- Luk-knappen -->
+  <button type="button" id="luk_knap" aria-label="Luk">
+    <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
+  </button>
+</form>
+</section>
+
+<script src="/features/popup.js"></script>  
       </section>
 </body>
 </html>
