@@ -164,3 +164,57 @@
   background-color: #286090;
     
 }
+
+/* Side 4 - Korrekt siden */
+.hjernen_korrekt_body{
+    background-image: url('/img/hjernen/korrekt.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Afslut knap */
+.afslut_knappen {
+  position: absolute;
+  padding: 0.8rem 4.5rem;
+  background-color: #9D433B;
+  color: white;
+  border: none;
+  border: 0.1rem solid white;
+  border-radius: 10rem;
+  font-family: "Swanky and Moo Moo";
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 4;
+  top: 72%;
+  left: 46%;
+  transform: rotate(6deg);
+}
+  
+.afslut_knappen:hover {
+  background-color: #9D433B;
+}
+
+/* Start igen knap */
+.start_igen_knap {
+  position: absolute;
+  padding: 0.6rem 3rem;
+  background-color: #576D8C;
+  color: white;
+  border: none;
+  border: 0.1rem solid #A5B4C9;
+  border-radius: 10rem;
+  font-family: "Swanky and Moo Moo";
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 4;
+  top: 70%;
+  left:29%;
+  transform: rotate(6deg);
+}
+  
+.afslut_knappen:hover {
+  background-color: #9D433B;
+}

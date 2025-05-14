@@ -11,7 +11,7 @@
     z-index: 0;
 }
 
-.indtastsvarknap{
+.indtast_svar_knap{
     position: absolute;
     top: 53rem;
     left: 70rem;
@@ -19,10 +19,9 @@
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
-    z-index: 2;
 }
 
-.indtastsvarknap:hover {
+.indtast_svar_knap:hover {
     transform: scale(1.05);
 }
 
@@ -83,4 +82,117 @@ section img{
     width: 9rem;
     top: 1rem;
     margin-left: 82rem;
+}
+
+
+/* Overlayet */
+#overlay_billede {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* lidt gennemsigtig baggrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* læg det øverst */
+  }
+  
+  /* Gør at billedet først viser sig når man trykker på knappen */
+  #overlay_billede[hidden] {
+    display: none !important;
+  }
+
+/* Billede på bogs størrelse */
+  .overlay_indtast_svar{
+    width: 37rem;
+    position: absolute;
+    height: auto;
+    z-index: 1;
+  }
+
+/* Formular ovenpå billedet */
+#svar_form {
+    position: absolute;
+    z-index: 2;
+    width: 17rem;; /* kontrolleret bredde */
+  }
+
+  /* Inputfelt */
+.bruger_svar {
+    position: absolute;
+    top: -2rem;
+    width: 21rem;
+    padding: 0.2rem 1rem;
+    border-radius: 7rem;
+    border: none;
+    text-align: center;
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 1.7rem;
+    z-index: 2;
+  }
+
+/* Luk knappen */
+#luk_knap {
+    position: absolute;
+    bottom: 15.5rem;
+    left: 21.9rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #luk_knap img {
+    width: 2.5rem;
+  }
+
+/* OK-knap */
+#ok_knap {
+    position: absolute;
+    top: 3.7rem;
+    left: 14.7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#ok_knap img {
+    width: 7rem;
+}
+
+/* Forkert svar billedet*/
+.forkert_overlay{
+  position: relative;
+  left: 2rem;
+  z-index: 3;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Forkert svar - Prøv igen knappen */
+.prov_igen_knap {
+  position: absolute;
+  padding: 0.6rem 3rem;
+  background-color: #576D8C;
+  color: white;
+  border: none;
+   border: 0.1rem solid #A5B4C9;
+  border-radius: 10rem;
+  font-family: "The Girl Next Door", cursive;
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 4;
+  top: 55%;
+  left: 46%;
+  transform: scale(1.05); 
+  transform: rotate(-4deg);
+}
+  
+.blå-knap:hover {
+  background-color: #286090;
+    
 }
