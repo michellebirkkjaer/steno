@@ -90,14 +90,14 @@
   /* Inputfelt */
 .bruger_svar {
     position: absolute;
-    top: -1rem;
+    top: -2rem;
     width: 21rem;
-    padding: 0.7rem 1rem;
+    padding: 0.2rem 1rem;
     border-radius: 7rem;
     border: none;
     text-align: center;
     font-family: 'The Girl Next Door', cursive;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     z-index: 2;
   }
 
@@ -148,15 +148,19 @@
   background-color: #576D8C;
   color: white;
   border: none;
+   border: 0.1rem solid #A5B4C9;
   border-radius: 10rem;
   font-family: "The Girl Next Door", cursive;
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 4;
-  top: 54%;
+  top: 55%;
   left: 46%;
+  transform: scale(1.05); 
+  transform: rotate(-4deg);
 }
   
 .blå-knap:hover {
-    background-color: #286090;
-  }
+  background-color: #286090;
+    
+}

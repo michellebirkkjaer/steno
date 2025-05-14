@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjernesiden</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave+Display&family=The+Girl+Next+Door&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/hjerne.css">
+    <link rel="stylesheet" href="/css/generelt.css">
+
+</head>
+<body class="hjernen_regnestykke1_body">
+
+<!-- TIL ALLE: Afslut spil knap - Husk at linke til css generelt, for at få den rigtige størrelse -->
+<section>
+    <a href="/index.html">
+    <img src="/img/generelt/afslut_spil_knap.webp" alt="Knappen til afslut spil" class="afslut_spil_knap">
+    </a>
+</section>
+
+<!-- Button til indtast knap  -->
+<section>
+    <button id="indtast_knap" aria-label="Indtast svar">
+      <img src="/img/hjernen/indtast_svar_knap.webp" alt="Stykke tape med indtast svar" class="indtast_svar_knap">
+    </button>
+  </section>
+
+<!-- Overlay -->
+<section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
+    <img src="/img/hjernen/indtast_svar_bog.webp" alt="En side i en bog hvor man indtaster sit svar svar" class="overlay_indtast_svar"/>
+
+    <!-- Interaktiv form ovenpå -->
+    <form id="svar_form">
+    <label for="bruger_svar" hidden>Indtast svar</label>
+
+    <!-- Inputfelt -->
+    <input type="number" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
+
+    <!-- OK-knap som billede -->
+    <button type="submit" id="ok_knap" aria-label="Bekræft svar">
+      <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
+    </button>
+
+    <!-- Luk-knap som billede -->
+    <button type="button" id="luk_knap" aria-label="Luk">
+      <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
+    </button>
+  </form>
+
+<!-- Forkert svar-overlay (skjult fra start) -->
+<section id="forkert_overlay" hidden>
+    <img src="/img/hjernen/forkert.webp" alt="Post it seddel med ordet forkert" class="forkert_overlay"/>
+    <button id="prov_igen_knap" class="prov_igen_knap">Prøv igen</button>
+</section>
+</section>
+
+
+
+
+<script src="/features/indtast_svar.js" ></script>
+</body>
+</html>

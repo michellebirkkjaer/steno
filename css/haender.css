@@ -72,7 +72,7 @@
 }
 
 .flyvende_effekt {
-    animation: cirkelSvaev 7s linear infinite;
+    animation: cirkelSvaev 10s linear infinite;
     position: relative;
     will-change: transform;
 }
@@ -100,6 +100,53 @@
     95%  { transform: translate(3px, -9px); }
     100% { transform: translate(0px, -10px); }
 }
+
+
+/* Hænder find tingene */
+
+.haender_find_body {
+    background-image: url('/img/haender/haandside_find_tingene.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 3rem;
+}
+
+.haender_find_overskrift_sektion {
+    display: flex;
+    justify-content: center;
+    font-size: 1.75rem;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.haender_find_overskrift {
+    font-family: "The Girl Next Door";
+    color: white;
+    line-height: 5rem;
+}
+
+.haender_spørgsmaalstegn_sektion {
+    display: flex;
+    justify-content: center;
+}
+
+.haender_spørgsmaalstegn_sektion img {
+    height: auto;
+    object-fit: contain;
+}
+
+
+.pink {
+    width: 10%;
+}
+
+.grå {
+    width: 30%;
+}
+
 
 /* Generelle knapper */
 
