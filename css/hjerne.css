@@ -54,3 +54,95 @@
 }
 
 /* Overlayet */
+#overlay_billede {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* lidt gennemsigtig baggrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* læg det øverst */
+  }
+  
+  /* Gør at billedet først viser sig når man trykker på knappen */
+  #overlay_billede[hidden] {
+    display: none !important;
+  }
+
+/* Billede på bogs størrelse */
+  .overlay_indtast_svar{
+    width: 37rem;
+    position: absolute;
+    height: auto;
+    z-index: 1;
+  }
+
+/* Formular ovenpå billedet */
+#svar_form {
+    position: absolute;
+    z-index: 2;
+    width: 17rem;; /* kontrolleret bredde */
+  }
+
+  /* Inputfelt */
+.bruger_svar {
+    position: absolute;
+    top: -1rem;
+    width: 21rem;
+    padding: 0.7rem 1rem;
+    border-radius: 7rem;
+    border: none;
+    text-align: center;
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+
+/* Luk knappen */
+#luk_knap {
+    position: absolute;
+    bottom: 15.5rem;
+    left: 21.9rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #luk_knap img {
+    width: 2.5rem;
+  }
+
+/* OK-knap */
+#ok_knap {
+    position: absolute;
+    top: 3.7rem;
+    left: 14.7rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#ok_knap img {
+    width: 7rem;
+}
+
+/* Forkert svar - Prøv igen knappen */
+.prov_igen_knap {
+    background-color: #337ab7; /* blå farve */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .blå-knap:hover {
+    background-color: #286090;
+  }
