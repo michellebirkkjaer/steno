@@ -12,3 +12,48 @@ body{
     height: 100vh;
     margin: 0;
 }
+
+.button1 {
+    font-size: 1.5rem;
+    font-family:  "the girl next door";
+    text-decoration: none;
+    border-radius: 43%;
+    padding: 1rem 3rem;
+    background-color: #576D8C;
+    color: white;
+    border: 0.1rem solid white;
+    z-index: 1; /* Sørger for, at knappen er foran baggrunden */
+    margin: 1rem;
+    margin-right: 3.5rem;
+  
+}
+.button1:hover{
+    background-color: #455469;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+     transform: scale(1.05); 
+}
+
+.button2 {
+    font-size: 1.5rem;
+    font-family:  "the girl next door";
+    text-decoration: none;
+    border-radius: 43%;
+    padding: 1rem 3rem;
+    background-color: #9D433B;
+    color: white;
+    border: 0.1rem solid white;
+    z-index: 1; /* Sørger for, at knappen er foran baggrunden */
+}
+
+.button2:hover {
+
+    background-color: #85443e;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.knapper {
+    padding-top: 23%;
+    padding-left: 40%;
+    transform: rotate(5deg);
+}
