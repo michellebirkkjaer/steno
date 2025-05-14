@@ -1,11 +1,14 @@
 
 .baggrundsbillede{
+    position: relative;
     background-image: url('/img/hjernen/regnestykke2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    max-width: 100%;
     margin: 0;
+    z-index: 0;
 }
 
 .indtastsvarknap{
@@ -16,6 +19,7 @@
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
+    z-index: 2;
 }
 
 .indtastsvarknap:hover {
@@ -30,8 +34,42 @@
     height: auto;
     cursor: pointer;
     transition: transform 0.2s ease;
+    z-index: 2;
 }
 
 .afslut_spil_knap:hover {
     transform: scale(1.05);
+}
+
+.regnestykker{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    top: 20rem;
+    z-index: 1;
+}
+
+.linje1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linje1 img{
+    width: 12rem;
+}
+
+.linje2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linje2 img{
+    width: 7rem;
+}
+
+.tegn{
+    width: ;
 }
