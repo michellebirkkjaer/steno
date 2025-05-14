@@ -72,7 +72,7 @@
 }
 
 .flyvende_effekt {
-    animation: cirkelSvaev 7s linear infinite;
+    animation: cirkelSvaev 10s linear infinite;
     position: relative;
     will-change: transform;
 }
