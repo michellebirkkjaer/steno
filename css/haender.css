@@ -69,9 +69,6 @@
     width: 85%;
     display: block;
     margin: 0 auto;
-}
-
-.flyvende_effekt {
     animation: cirkelSvaev 10s linear infinite;
     position: relative;
     will-change: transform;
@@ -128,24 +125,45 @@
     line-height: 5rem;
 }
 
-.haender_spørgsmaalstegn_sektion {
-    padding-top: 4rem;
+.haender_sporgsmaalstegn_sektion {
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
 }
 
-.haender_spørgsmaalstegn_sektion img {
+.haender_sporgsmaalstegn_sektion img {
     height: auto;
     object-fit: contain;
 }
 
 .pink {
-    width: 10%;
+    margin-top: 8rem;
+    width: 12%;
+    animation-delay: 0s;
 }
 
 .grå {
-    width: 30%;
+    width: 12%;
+    margin-bottom: 10rem;
+    animation-delay: 0.7s;
 }
+
+.blå {
+    margin-top: 10rem;
+    margin-left: 4rem;
+    animation-delay: 1.3s;
+}
+
+.sporgsmaalstegn {
+    animation: tilt 5s ease-in-out infinite;
+}
+@keyframes tilt {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(7deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
 /* Hænder resultatside */
 
 .haender_resultat_body {
@@ -156,17 +174,56 @@
     height: 100vh;
     margin-top: 2rem;
 }
+.haender_resultat_elementer {
+    margin-bottom: 3rem;
+}
 
 .haender_resultat_overskrift {
     font-family: "Sedgwick Ave Display";
     font-weight: 100;
     margin: 0;
-    padding-top: 3rem;
+    padding-top: 2rem;
     font-size: 3.5rem;
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(233, 233, 233);
 }
+
+.buttons_sektion {
+    display: flex;
+    justify-content: center;
+}
+
+.afslut_knappen {
+    padding: 0.8rem 4.5rem;
+    background-color: #9D433B;
+    color: white;
+    border: none;
+    border: 0.1rem solid white;
+    border-radius: 10rem;
+    font-family: "Swanky and Moo Moo";
+    font-size: 1.6rem;
+    cursor: pointer;
+    top: 72%;
+    left: 46%;
+    margin-left: 1rem;
+  }
+    
+.prøv_igen_knap {
+    padding: 0.6rem 3rem;
+    background-color: #576D8C;
+    color: white;
+    border: none;
+    border: 0.1rem solid white;
+    border-radius: 10rem;
+    font-family: "Swanky and Moo Moo";
+    font-size: 1.8rem;
+    cursor: pointer;
+    top: 70%;
+    left:29%;
+    margin-right: 1rem;
+  }
+
 
 /* Generelle knapper */
 
