@@ -61,8 +61,6 @@
     background-repeat: no-repeat;
     height: 100vh;
     margin-top: 2rem;
-    display: flex;
-    justify-content: center; 
 }
 
 .penalhus_elementer {
@@ -72,6 +70,7 @@
     animation: cirkelSvaev 10s linear infinite;
     position: relative;
     will-change: transform;
+    z-index: 0;
 }
 
 @keyframes cirkelSvaev {
@@ -98,6 +97,17 @@
     100% { transform: translate(0px, -10px); }
 }
 
+#countdown {
+    display: flex;
+    justify-content: center;
+    font-family: "The Girl Next Door";
+    font-size: 8rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 2;
+    bottom: 15rem 
+  }
 
 /* Hænder find tingene */
 
@@ -139,24 +149,24 @@
 .pink {
     margin-top: 8rem;
     width: 12%;
+    animation: tilt 5s ease-in-out infinite;
     animation-delay: 0s;
 }
 
 .grå {
     width: 12%;
     margin-bottom: 10rem;
+    animation: tilt 5s ease-in-out infinite;
     animation-delay: 0.7s;
 }
 
 .blå {
     margin-top: 10rem;
     margin-left: 4rem;
+    animation: tilt 5s ease-in-out infinite;
     animation-delay: 1.3s;
 }
 
-.sporgsmaalstegn {
-    animation: tilt 5s ease-in-out infinite;
-}
 @keyframes tilt {
     0%, 100% { transform: rotate(0deg); }
     25% { transform: rotate(7deg); }
