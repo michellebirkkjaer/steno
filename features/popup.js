@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
   
   if (brugerSvar === korrektSvar) {
       // Hvis korrekt, send brugeren videre til ny side
-      window.location.href = 'maven_korrekt.html';
+      window.location.href = "maven_korrekt.html";
   } else {
       // Hvis forkert, vis forkert-overlay
-      window.location.href = "maven_forkert.html";
+      window.location.href = 'maven_forkert.html';
   }
   });
   
