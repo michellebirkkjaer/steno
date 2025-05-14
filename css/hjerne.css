@@ -88,7 +88,7 @@
   }
 
   /* Inputfelt */
-#bruger_svar {
+.bruger_svar {
     position: absolute;
     top: -1rem;
     width: 21rem;
