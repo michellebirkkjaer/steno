@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* dagbogssiden */
+.dagbogsside{
+    background-image: url('/img/maven/maveside_dagbog.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.gaa_til_spil{
+    position: absolute;  
+    top: 70%;    
+    left: 57%;          
+    width: 15rem;
+}
+
+.gaa_til_spil:hover{
+  transform: scale(1.05);
+}
+
+/* forside */
+.forside{
+    background-image: url(/img/maven/forside.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+.start{
+    position: absolute;  
+    top: 82%;    
+    left: 40%;          
+    width: 20rem;
+}
+
+.start:hover{
+  transform: scale(1.05);
+}
+
+/* Mads */
+.mads{
+    background-image: url(/img/maven/mads.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Louise */
+.louise{
+    background-image: url(/img/maven/louise.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Villads */
+.villads{
+    background-image: url('/img/maven/villads.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Freja */
+.freja{
+    background-image: url(/img/maven/freja.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+/* gældende for alle sider */
+.højre {
+    position: absolute;  
+    top: 50%;    
+    left: 82%;          
+    width: 20rem;
+}
+.højre:hover{
+  transform: scale(1.05);
+}
+
+.venstre {
+    position: absolute;  
+    top: 50%;    
+    right: 82%;          
+    width: 20rem;
+}
+.venstre:hover{
+  transform: scale(1.05);
+}
+
+.afslut_spil{
+    position: absolute;  
+    top: 85%;    
+    right: 80%;          
+    width: 15rem;
+}
+.afslut_spil:hover{
+  transform: scale(1.05);
+}
+
+.gaet{
+    position: absolute;  
+    top: 85%;    
+    left: 80%;          
+    width: 15rem;
+} 
+.gaet:hover{
+  transform: scale(1.05);
+}
+
+
+/* Styling af pop-up'en */
+#overlay_billede {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* lidt gennemsigtig baggrund */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* læg det øverst */
+  }
+  
+  /* Gør at billedet først viser sig når man trykker på knappen */
+  #overlay_billede[hidden] {
+    display: none !important;
+  }
+
+/* Billede på bogs størrelse */
+  .overlay_indtast_navn{
+    width: 77rem;
+    position: absolute;
+    height: auto;
+    z-index: 1;
+  }
+
+/* Formular ovenpå billedet */
+#svar_form {
+    position: absolute;
+    z-index: 2;
+    width: 2rem;; /* kontrolleret bredde */
+    padding-left: 10%;
+  }
+
+  /* Inputfelt */
+.bruger_svar {
+    position: absolute;
+    top: -1rem;
+    width: 21rem;
+    padding: 0.7rem 1rem;
+    border-radius: 7rem;
+    border: none;
+    text-align: center;
+    font-family: 'The Girl Next Door', cursive;
+    font-size: 1.2rem;
+    z-index: 2;
+  }
+
+/* Luk knappen */
+#luk_knap {
+    position: absolute;
+    bottom: 19rem;
+    left: 29rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #luk_knap img {
+    width: 2.5rem;
+  }
+
+/* OK-knap */
+#ok_knap {
+    position: absolute;
+    top: 4rem;
+    left: 16.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#ok_knap img {
+    width: 7rem;
+}
+
+#ok_knap:hover{
+  transform: scale(1.05);
+}
+
+/* Forkert svar - Prøv igen knappen */
+.prov_igen_knap {
+    background-color: #337ab7; /* blå farve */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .blå-knap:hover {
+    background-color: #286090;
+  }
+
+
+
+  /* forkert svar side */
+  .forkert{
+    background-image: url(/img/maven/maveside_forkert.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.proev_igen {
+    position: absolute;
+    padding: 0.6rem 3rem;
+    background-color: #9D433B;;
+    color: white;
+    border: none;
+     border: 0.1rem solid white;
+    border-radius: 10rem;
+    font-family: "The Girl Next Door", cursive;
+    text-decoration: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 4;
+    top: 80%;
+    left: 30%;
+    transform: scale(1.05); 
+  }
+    
+  .proev_igen {
+    background-color: #b53e33;
+  }
+
+  .afslut {
+    position: absolute;
+    padding: 0.8rem 3rem;
+    background-color: #576D8C;
+    color: white;
+    border: none;
+    border: 0.1rem solid white; 
+    border-radius: 10rem;
+    font-family: "The Girl Next Door", cursive;
+    text-decoration: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 4;
+    top: 80%;
+    left: 46%;
+    transform: scale(1.05); 
+  }
+    
+  .afslut:hover {
+    background-color: #286090;
+      
+  }
+
+  .knapper_forkert {
+    padding-top: 28%;
+    padding-left: 27%;
+    transform: rotate(-4deg);
+}
+
+
+/* korrekt svar side */
+.proev_igen_korrekt {
+    position: absolute;
+    padding: 0.6rem 3rem;
+    background-color: #9D433B;;
+    color: white;
+    border: none;
+     border: 0.1rem solid white;
+    border-radius: 10rem;
+    font-family: "The Girl Next Door", cursive;
+    text-decoration: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 4;
+    top: 70%;
+    left: 43%;
+    transform: scale(1.05); 
+  }
+    
+  .proev_igen_korrekt:hover {
+    background-color: #b53e33;
+  }
+
+  .afslut_korrekt {
+    position: absolute;
+    padding: 0.8rem 3rem;
+    background-color: #576D8C;
+    color: white;
+    border: none;
+    border: 0.1rem solid white; 
+    border-radius: 10rem;
+    font-family: "The Girl Next Door", cursive;
+    text-decoration: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 4;
+    top: 70%;
+    left: 59%;
+    transform: scale(1.05); 
+  }
+    
+  .afslut_korrekt:hover {
+    background-color: #286090;
+      
+  }
+
+  .knapper_korrekt {
+    padding-top: 28%;
+    padding-left: 27%;
+    transform: rotate(6deg);
+}
+
+
+

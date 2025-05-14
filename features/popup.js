@@ -43,15 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = 'maven_forkert.html';
     }
   });
-  
-  const formElement = document.getElementById("svar_form");
-  const billedeElement = document.querySelector(".overlay_indtast_navn");
-  
-  overlayBillede.addEventListener("click", (event) => {
-    // Luk kun hvis klik ikke er inde i form eller billedet
-    if (!formElement.contains(event.target) && !billedeElement.contains(event.target)) {
-      overlayBillede.setAttribute("hidden", true);
-    }
-  });
+
+ const popupIndhold = document.querySelector(".popup-indhold");
+
+overlayBillede.addEventListener("click", (event) => {
+  if (!popupIndhold.contains(event.target)) {
+    overlayBillede.setAttribute("hidden", true);
+  }
+});
 
   });
