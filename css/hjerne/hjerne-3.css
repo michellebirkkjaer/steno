@@ -77,3 +77,10 @@ section img{
 .tegn{
     width: 6rem;
 }
+
+.horetelefoner {
+    position: absolute;
+    width: 9rem;
+    top: 1rem;
+    margin-left: 82rem;
+}
