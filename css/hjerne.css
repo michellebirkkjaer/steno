@@ -148,7 +148,7 @@
   background-color: #576D8C;
   color: white;
   border: none;
-   border: 0.1rem solid #A5B4C9;
+   border: 0.1rem solid white;
   border-radius: 10rem;
   font-family: "The Girl Next Door", cursive;
   font-size: 1.6rem;
@@ -178,19 +178,18 @@
 /* Afslut knap */
 .afslut_knappen {
   position: absolute;
-  padding: 0.6rem 3rem;
+  padding: 0.8rem 4.5rem;
   background-color: #9D433B;
   color: white;
   border: none;
-   border: 0.1rem solid white;
+  border: 0.1rem solid white;
   border-radius: 10rem;
-  font-family: "The Girl Next Door", cursive;
+  font-family: "Swanky and Moo Moo";
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 4;
-  top: 68%;
+  top: 72%;
   left: 46%;
-  transform: scale(1.05); 
   transform: rotate(6deg);
 }
   
@@ -205,15 +204,14 @@
   background-color: #576D8C;
   color: white;
   border: none;
-   border: 0.1rem solid #A5B4C9;
+  border: 0.1rem solid #A5B4C9;
   border-radius: 10rem;
-  font-family: "Swanky ", cursive;
-  font-size: 1.6rem;
+  font-family: "Swanky and Moo Moo";
+  font-size: 1.8rem;
   cursor: pointer;
   z-index: 4;
-  top: 68%;
-  left: 46%;
-  transform: scale(1.05); 
+  top: 70%;
+  left:29%;
   transform: rotate(6deg);
 }
   
