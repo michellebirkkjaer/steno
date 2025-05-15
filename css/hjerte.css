@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
-.hjete_overskrift {
+.hjerte_overskrift {
     font-family: "The Girl Next Door";
     padding-top: 3rem;
-    font-size: 3.5rem;
+    font-size: 1.75rem;
+    font-weight: 100;
     display: flex;
     justify-content: center;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .video_sektion {
