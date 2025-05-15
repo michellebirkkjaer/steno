@@ -222,7 +222,11 @@
     left: 46%;
     margin-left: 1rem;
   }
-    
+   
+  .afslut_knappen:hover {
+    transform: scale(1.05);
+}
+
 .prøv_igen_knap {
     padding: 0.6rem 3rem;
     background-color: #576D8C;
@@ -238,10 +242,16 @@
     margin-right: 1rem;
   }
 
+  .prøv_igen_knap:hover {
+    transform: scale(1.05);
+}
+
+
+
 
 /* Generelle knapper */
 
-.tilbage_forside_knap{
+/* .tilbage_forside_knap{
     position: absolute;
     top: 55rem;
     left: 1rem;
@@ -253,7 +263,7 @@
 
 .tilbage_forside_knap:hover {
     transform: scale(1.05);
-}
+} */
 
 .gå_til_spil_knap {
     position: absolute;  
@@ -274,7 +284,7 @@
     transform: scale(1.05);
 }
 
-.afslut_spil_knap{
+/* .afslut_spil_knap{
     position: absolute;
     top: 55rem;
     left: 2rem;
@@ -286,4 +296,4 @@
 
 .afslut_spil_knap:hover {
     transform: scale(1.05);
-}
+} */
