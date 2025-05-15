@@ -1,3 +1,5 @@
+"use strict";
+
 const audio = document.getElementById('background-audio');
 const button = document.getElementById('toggle-btn');
 const icon = document.getElementById('btn-icon');
