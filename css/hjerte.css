@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.hjete_overskrift {
+    font-family: "The Girl Next Door";
+    padding-top: 3rem;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
 .video_sektion {
     position: relative;
     width: 100%;
