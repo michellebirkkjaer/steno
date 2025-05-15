@@ -38,3 +38,10 @@
 .afslut_spil_knap:hover {
     transform: scale(1.05);
 }
+
+.horetelefoner {
+    position: absolute;
+    width: 9rem;
+    top: 1rem;
+    margin-left: 82rem;
+}
