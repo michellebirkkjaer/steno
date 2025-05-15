@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/hjerne/hjerne-3.css">
+    <title>Hjernesiden 3</title>
+
+<!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Swanky+and+Moo+Moo&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/css/hjerne.css">
     <link rel="stylesheet" href="/css/generelt.css">
 </head>
 <body class="baggrundsbillede">
@@ -27,14 +34,16 @@
             <img src="/img/hjernen/spørgsmaelstegn.webp" alt="" class="tal">
         </article>
     </section>
-    <section>
-            <a href="/index.html">
-            <img class="afslut_spil_knap" src="/img/generelt/afslut_spil_knap.webp" alt="Afslut spil knap">
-            </a>
-     </section>
 
+  
+  <!-- Afslut spil knap -->
+<section>
+      <a href="/index.html">
+      <img class="afslut_spil_knap" src="/img/generelt/afslut_spil_knap.webp" alt="Afslut spil knap">
+      </a>
+</section>
 
-
+<!-- Høretelefonerbillede -->
      <button id="toggle-btn" aria-pressed="false" aria-label="Mute audio">
         <img id="btn-icon" src="/img/generelt/horetelefoner.webp" alt="Speaker on" class="horetelefoner"/>
       </button>
@@ -43,16 +52,12 @@
         Din browser understøtter ikke lyden.
       </audio>
 
-
-
-
-
-
-    <section>
-        <button id="indtast_knap" aria-label="Indtast svar">
-          <img src="/img/hjernen/indtast_svar_knap.webp" alt="Stykke tape med indtast svar" class="indtast_svar_knap">
-        </button>
-    </section>
+<!-- Button til indtast knap  -->
+  <section>
+      <button id="indtast_knap" aria-label="Indtast svar">
+        <img src="/img/hjernen/indtast_svar_knap.webp" alt="Stykke tape med indtast svar" class="indtast_svar_knap">
+      </button>
+  </section>
 
     <!-- Overlay -->
 <section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
@@ -81,7 +86,7 @@
     <img src="/img/hjernen/forkert.webp" alt="Post it seddel med ordet forkert" class="forkert_overlay"/>
     <button id="prov_igen_knap" class="prov_igen_knap">Prøv igen</button>
  </section>
-
+ </section>
 
 
  <script src="/features/indtastsvar_maves3.js"></script>
