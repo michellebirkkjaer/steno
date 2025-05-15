@@ -41,10 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Luk overlayet når der klikkes udenfor billedet
-    overlayBillede.addEventListener("click", (event) => {
-        // Check if the click was on the overlay itself
-        if (event.target === overlayBillede) {
-            overlayBillede.setAttribute("hidden", true);
-        }
-    });
+    // overlayBillede.addEventListener("click", (event) => {
+    //     // Check if the click was on the overlay itself
+    //     if (event.target === overlayBillede) {
+    //         overlayBillede.setAttribute("hidden", true);
+    //     }
+    // });
 });

@@ -1,36 +1,42 @@
-"use strict";
-
 const audio = document.getElementById('background-audio');
-    const button = document.getElementById('toggle-btn');
-    const icon = document.getElementById('btn-icon');
-    // URLs for speaker icons - you can replace these with your own icons if desired
-    const iconOn = 'https://cdn-icons-png.flaticon.com/512/727/727240.png'; // speaker on
-    const iconMuted = 'https://cdn-icons-png.flaticon.com/512/727/727245.png'; // speaker muted with cross
-    button.addEventListener('click', () => {
-      if (!audio.paused && !audio.muted) {
-        // If playing & unmuted, mute the audio
-        audio.muted = true;
-        icon.src = iconMuted;
-        icon.alt = 'Speaker muted - click to restart audio';
-        button.setAttribute('aria-pressed', 'true');
-        button.setAttribute('aria-label', 'Restart audio from beginning');
-      } else {
-        // If muted (or paused), unmute and restart from beginning and play
-        audio.muted = false;
-        audio.currentTime = 0;
-        audio.play();
-        icon.src = iconOn;
-        icon.alt = 'Speaker on - click to mute audio';
-        button.setAttribute('aria-pressed', 'false');
-        button.setAttribute('aria-label', 'Mute audio');
-      }
-    });
+const button = document.getElementById('toggle-btn');
+const icon = document.getElementById('btn-icon');
 
-     // Handle autoplay rejection by some browsers
-    audio.play().catch(() => {
-        audio.muted = true;
-        icon.src = iconMuted;
-        icon.alt = 'Speaker muted - click to restart audio';
-        button.setAttribute('aria-pressed', 'true');
-        button.setAttribute('aria-label', 'Restart audio from beginning');
-        });
+
+const iconOn = new Image();
+iconOn.src = "/img/generelt/horetelefoner.webp";
+iconOn.alt = "Høretelefoner";
+
+const iconMuted = new Image();
+iconMuted.src = "/img/generelt/mute_horetelefoner.webp";
+iconMuted.alt = "Mute høretelefoner";
+iconMuted.classList.add("horetelefoner");
+
+
+// Klik-handler
+button.addEventListener('click', () => {
+  if (!audio.paused && !audio.muted) {
+    audio.muted = true;
+    icon.src = iconMuted.src;
+    icon.alt = iconMuted.alt;
+    button.setAttribute('aria-pressed', 'true');
+    button.setAttribute('aria-label', 'Restart audio from beginning');
+  } else {
+    audio.muted = false;
+    audio.currentTime = 0;
+    audio.play();
+    icon.src = iconOn.src;
+    icon.alt = iconOn.alt;
+    button.setAttribute('aria-pressed', 'false');
+    button.setAttribute('aria-label', 'Mute audio');
+  }
+});
+
+// Fallback hvis autoplay fejler
+audio.play().catch(() => {
+  audio.muted = true;
+  icon.src = iconMuted.src;
+  icon.alt = iconMuted.alt;
+  button.setAttribute('aria-pressed', 'true');
+  button.setAttribute('aria-label', 'Restart audio from beginning');
+});
