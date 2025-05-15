@@ -5,10 +5,16 @@
     box-sizing: border-box;
 }
 
+.knap_sektion {
+    position: relative;
+    height: 200px; /* eller noget relevant */
+    width: 300px;
+}
+
 .tilbage_forside_knap{
     position: absolute;
-    top: 45rem;
-    left: 1rem;
+    top: 51rem;
+    left: 2rem;
     width: 14rem;
     height: auto;
     cursor: pointer;
