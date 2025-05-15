@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<link rel="stylesheet" href="/css/hjerte.css">
+<link rel="stylesheet" href="/css/generelt.css">
 </head>
 <body>
+    
+    <section class="video_sektion">
+        <button id="playBtn">Afspil video med lyd</button>
+        
+        <video id="myVideo" loop playsinline>
+          <source src="/img/hjerte/motiongraphic.mp4" type="video/mp4">
+          Din browser understøtter ikke video-tagget.
+        </video>
+      </section>
+
+
+    <section>
+        <a href="/index.html">
+            <img src="/img/generelt/tilbage_til_forsiden.webp" alt="forside knap" class="tilbage_forside_knap">
+        </a>
+    </section>
+    
+    <script src="/features/spil_video.js"></script>
     
 </body>
 </html>

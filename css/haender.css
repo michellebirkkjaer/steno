@@ -241,20 +241,6 @@
 
 /* Generelle knapper */
 
-.tilbage_forside_knap{
-    position: absolute;
-    top: 55rem;
-    left: 1rem;
-    width: 14rem;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.tilbage_forside_knap:hover {
-    transform: scale(1.05);
-}
-
 .gå_til_spil_knap {
     position: absolute;  
     top: 65%;    
@@ -264,18 +250,4 @@
 
 .start_spillet_knap {
     width: 17rem;
-}
-
-.afslut_spil_knap{
-    position: absolute;
-    top: 55rem;
-    left: 2rem;
-    width: 14rem;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.afslut_spil_knap:hover {
-    transform: scale(1.05);
 }
