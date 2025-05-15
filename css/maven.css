@@ -149,7 +149,7 @@
 
 /* Billede på bogs størrelse */
   .overlay_indtast_navn{
-    width: 77rem;
+    width: 67rem;
     position: absolute;
     height: auto;
     z-index: 1;
