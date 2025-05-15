@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="/css/maven.css">
+     <link rel="stylesheet" href="/css/generelt.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,10 +18,11 @@
 </section>
 
 
-<section class="knapper">
-    <a href="/index.html">
-      <img src="/img/generelt/afslut_spil_knap.webp" alt="afslut spil knap" class="afslut_spil">
-    </a>
+<section class="knap_section">
+  <a href="/index.html">
+  <img src="/img/generelt/afslut_spil_knap.webp" alt="Knappen til afslut spil" class="afslut_spil_knap">
+  </a>
+</section>
 
 
 <!-- POP UP -->
@@ -33,7 +35,7 @@
 
 <!-- Overlay -->
 <section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
-  <img src="/img/maven/overlay_pop up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn"/>
+  <img src="/img/maven/overlay_pop_up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn"/>
 
   <!-- formen hvor brugeren indtaster svar -->
   <form id="svar_form">
@@ -55,5 +57,6 @@
 </section>
 
 <script src="/features/popup.js"></script>   
+<script src="/features/overlay_luk.js"></script> 
 </body>
 </html>
