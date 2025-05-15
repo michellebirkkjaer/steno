@@ -39,12 +39,4 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = 'maven_forkert.html';
         }
     });
-
-    // Luk overlayet når der klikkes udenfor billedet
-    // overlayBillede.addEventListener("click", (event) => {
-    //     // Check if the click was on the overlay itself
-    //     if (event.target === overlayBillede) {
-    //         overlayBillede.setAttribute("hidden", true);
-    //     }
-    // });
 });
