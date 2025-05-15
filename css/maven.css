@@ -258,7 +258,7 @@
     transform: scale(1.05); 
   }
     
-  .proev_igen {
+  .proev_igen:hover {
     background-color: #b53e33;
   }
 
@@ -286,13 +286,23 @@
   }
 
   .knapper_forkert {
-    padding-top: 28%;
+    padding-top: 30%;
     padding-left: 27%;
-    transform: rotate(-4deg);
+    transform: rotate(-2.8deg);
 }
 
 
 /* korrekt svar side */
+
+.korrekt{
+  background-image: url(/img/maven/maveside_korrekt.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
 .proev_igen_korrekt {
     position: absolute;
     padding: 0.6rem 3rem;
