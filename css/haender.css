@@ -262,8 +262,16 @@
     width: 12rem;
 }
 
+.gå_til_spil_knap:hover {
+    transform: scale(1.05);
+}
+
 .start_spillet_knap {
     width: 17rem;
+}
+
+.start_spillet_knap:hover {
+    transform: scale(1.05);
 }
 
 .afslut_spil_knap{
