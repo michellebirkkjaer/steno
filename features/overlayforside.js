@@ -31,9 +31,15 @@ overlay.addEventListener('click', () => {
 }); //Lytter efter klik på overlayet. Når brugeren klikker på overlayet med musen, fjernes det med removeOverlay().
 
 
-overlay.addEventListener('keydown', (e) => { //Lytter efter tastetryk, mens overlayet har fokus.
-  if (e.key === 'Enter' || e.key === ' ') { //Hvis brugeren trykker på Enter eller mellemrum, aktiveres overlayet som en knap.
-    e.preventDefault(); //Forhindrer standard browser-opførsel (så f.eks. siden ikke scroller ved mellemrum).
-    removeOverlay(); //Kalder removeOverlay() ved tastetryk – samme funktionalitet som ved klik.
+// Gør overlay fokuserbart og sæt fokus
+overlay.setAttribute('tabindex', '0');
+overlay.focus();
+
+// Lyt efter tastetryk, mens overlay har fokus
+overlay.addEventListener('keydown', (e) => {
+  const key = e.key;
+  if (key === 'Enter' || key === ' ' || key === 'Spacebar') {
+    e.preventDefault();
+    removeOverlay();
   }
 });
