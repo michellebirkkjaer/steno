@@ -89,7 +89,7 @@
 /* gældende for alle sider */
 .højre {
     position: absolute;  
-    top: 50%;    
+    top: 40%;    
     left: 82%;          
     width: 20rem;
 }
@@ -99,7 +99,7 @@
 
 .venstre {
     position: absolute;  
-    top: 50%;    
+    top: 40%;    
     right: 82%;          
     width: 20rem;
 }
@@ -119,7 +119,7 @@
 
 .gaet{
     position: absolute;  
-    top: 85%;    
+    top: 88.5%;    
     left: 80%;          
     width: 15rem;
 } 
@@ -350,7 +350,7 @@
   }
 
   .knapper_korrekt {
-    padding-top: 28%;
+    padding-top: 30%;
     padding-left: 27%;
     transform: rotate(6deg);
 }
