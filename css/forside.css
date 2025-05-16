@@ -144,3 +144,8 @@
     white-space: nowrap; /* Forhindrer linjeskift */
   }
 
+  .hidden {
+    display: none !important;
+  }
+  
+
