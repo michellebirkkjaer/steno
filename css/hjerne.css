@@ -185,6 +185,7 @@
   border: 0.1rem solid white;
   border-radius: 10rem;
   font-family: "Swanky and Moo Moo";
+  text-decoration: none;
   font-size: 1.6rem;
   cursor: pointer;
   z-index: 4;
@@ -192,10 +193,7 @@
   left: 46%;
   transform: rotate(6deg);
 }
-  
-.afslut_knappen:hover {
-  background-color: #9D433B;
-}
+
 
 /* Start igen knap */
 .start_igen_knap {
@@ -207,16 +205,13 @@
   border: 0.1rem solid #A5B4C9;
   border-radius: 10rem;
   font-family: "Swanky and Moo Moo";
+  text-decoration: none;
   font-size: 1.8rem;
   cursor: pointer;
   z-index: 4;
   top: 70%;
   left:29%;
   transform: rotate(6deg);
-}
-  
-.afslut_knappen:hover {
-  background-color: #9D433B;
 }
 
 /* Hjerneside 3 */
