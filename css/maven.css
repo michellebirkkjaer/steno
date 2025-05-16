@@ -243,46 +243,37 @@
 .proev_igen {
     position: absolute;
     padding: 0.6rem 3rem;
-    background-color: #9D433B;;
+    background-color: #576D8C;
     color: white;
     border: none;
-     border: 0.1rem solid white;
+    border: 0.1rem solid white;
     border-radius: 10rem;
-    font-family: "The Girl Next Door", cursive;
+    font-family: "Swanky and Moo Moo";
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     cursor: pointer;
     z-index: 4;
     top: 80%;
     left: 30%;
     transform: scale(1.05); 
   }
-    
-  .proev_igen:hover {
-    background-color: #b53e33;
-  }
 
   .afslut {
     position: absolute;
     padding: 0.8rem 3rem;
-    background-color: #576D8C;
+    background-color: #9D433B;
     color: white;
     border: none;
     border: 0.1rem solid white; 
     border-radius: 10rem;
-    font-family: "The Girl Next Door", cursive;
+    font-family: "Swanky and Moo Moo";
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     cursor: pointer;
     z-index: 4;
     top: 80%;
     left: 46%;
     transform: scale(1.05); 
-  }
-    
-  .afslut:hover {
-    background-color: #286090;
-      
   }
 
   .knapper_forkert {
@@ -306,12 +297,12 @@
 .proev_igen_korrekt {
     position: absolute;
     padding: 0.6rem 3rem;
-    background-color: #9D433B;;
+    background-color: #576D8C;
     color: white;
     border: none;
      border: 0.1rem solid white;
     border-radius: 10rem;
-    font-family: "The Girl Next Door", cursive;
+    font-family: "Swanky and Moo Moo";
     text-decoration: none;
     font-size: 1.6rem;
     cursor: pointer;
@@ -329,12 +320,12 @@
   .afslut_korrekt {
     position: absolute;
     padding: 0.8rem 3rem;
-    background-color: #576D8C;
+    background-color: #9D433B;
     color: white;
     border: none;
     border: 0.1rem solid white; 
     border-radius: 10rem;
-    font-family: "The Girl Next Door", cursive;
+    font-family: "Swanky and Moo Moo";
     text-decoration: none;
     font-size: 1.6rem;
     cursor: pointer;
