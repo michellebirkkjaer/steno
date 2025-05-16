@@ -14,28 +14,36 @@
     <link rel="stylesheet" href="/css/generelt.css">
 </head>
 <body>
-    <header class="hjerte_body">
+    <header class="hjerte_body overlay">
         <h1 class="hjerte_overskrift">For personer med ADHD kan følelsesmæssige reaktioner skifte hurtigt. <br> Det kan føles som at gå fra 0 til 100 – og tilbage igen – på meget kort tid.
         </h1>
     </header>
-    
+
+
     <section class="video_sektion">
-        <button id="playBtn">Afspil video med lyd</button>
-        
-        <video id="myVideo" loop playsinline>
+        <!-- Video -->
+        <video id="myVideo" loop muted playsinline>
           <source src="/img/hjerte/motiongraphic.mp4" type="video/mp4">
           Din browser understøtter ikke video-tagget.
         </video>
+      
+        <!-- Overskrift - under overlay -->
+        <h1 class="hjerte_overskrift">
+          For personer med ADHD kan følelsesmæssige reaktioner skifte hurtigt. <br>
+          Det kan føles som at gå fra 0 til 100 – og tilbage igen – på meget kort tid.
+        </h1>
+      
+        <!-- Overlay med play-knap - ligger over overskrift -->
+        <div id="overlay">
+          <img id="playIcon" src="/img/hjerte/afspil_knap.webp" alt="Afspil video">
+        </div>
+      
+        <!-- Forside-knap - øverst -->
+        <a href="/index.html">
+          <img src="/img/generelt/tilbage_til_forsiden.webp" alt="forside knap" class="tilbage_forside_knap">
+        </a>
       </section>
 
-
-    <section>
-        <a href="/index.html">
-            <img src="/img/generelt/tilbage_til_forsiden.webp" alt="forside knap" class="tilbage_forside_knap">
-        </a>
-    </section>
-    
-    <script src="/features/spil_video.js"></script>
-    
+      <script src="/features/spil_video.js"></script>
 </body>
 </html>

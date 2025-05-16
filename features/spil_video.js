@@ -1,10 +1,11 @@
 "use strict";
 
-const btn = document.getElementById('playBtn');
+const overlay = document.getElementById('overlay');
 const video = document.getElementById('myVideo');
 
-btn.addEventListener('click', () => {
-  video.style.display = 'block';
+overlay.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  video.muted = false;
+  video.currentTime = 0;
   video.play();
-  btn.style.display = 'none';
 });
