@@ -11,7 +11,7 @@
   }
   
   /* 1. Nederst - video */
-  #myVideo {
+  #info_video {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -35,7 +35,7 @@
     z-index: 1;
   }
   
-  /* 3. Overlay med play-knap */
+  /* 3. Overlay med afspil-knap */
   #overlay {
     position: absolute;
     top: 0; left: 0;
@@ -50,21 +50,17 @@
     cursor: pointer;
   }
   
-  #playIcon {
-    width: 10rem;
-    height: 10rem;
+  #afspil_ikon {
+    width: 8rem;
+    height: 8rem;
     transition: transform 0.6s ease;
     cursor: pointer;
   }
-  #playIcon:hover {
+  #afspil_ikon:hover {
     transform: scale(1.08);
   }
   
   /* 4. Øverst - forsideknap */
   .tilbage_forside_knap {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    width: 60px;
     z-index: 3;
   }
