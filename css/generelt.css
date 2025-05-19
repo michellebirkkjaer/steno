@@ -7,7 +7,7 @@
 
 .knap_sektion {
     position: relative;
-    height: 200px; /* eller noget relevant */
+    height: 200px;
     width: 300px;
 }
 
@@ -44,4 +44,9 @@
     width: 9rem;
     top: 1rem;
     margin-left: 82rem;
+    transition: transform 0.2s ease;
+}
+
+.horetelefoner:hover {
+    transform: scale(1.05);
 }
