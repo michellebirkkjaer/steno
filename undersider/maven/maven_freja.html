@@ -41,14 +41,15 @@
 
   <!-- Overlay -->
   <section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
-    <img src="/img/maven/overlay_pop_up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn"/>
+    <img src="/img/maven/overlay_pop_up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn" autocomplete="new-password"/>
 
     <!-- formen hvor brugeren indtaster svar -->
-    <form id="svar_form">
+    <!-- autocomplete off gør at browseren ikke viser tidligere indtastede svar -->
+    <form id="svar_form" autocomplete="off">
       <label for="bruger_svar" hidden>Indtast svar</label>
 
     <!-- Inputfelt -->
-    <input type="text" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
+    <input type="text" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" autocomplete="off" />
 
     <!-- OK-knappen -->
     <button type="submit" id="ok_knap" aria-label="Bekræft svar">

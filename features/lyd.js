@@ -18,7 +18,6 @@ iconMuted.classList.add("horetelefoner");
 // Når siden er indlæst, prøv at starte lyden muted
 window.addEventListener("DOMContentLoaded", () => { // Når hele HTML'en er indlæst:
   audio.play().catch(() => { //Prøver at afspille lyden (den starter i muted-tilstand som standard).
-    console.warn("Autoplay mislykkedes – kræver brugerinteraktion."); //Hvis browseren blokerer autoplay (fordi der ikke har været brugerinteraktion), logges en advarsel i konsollen.
   });
 });
 

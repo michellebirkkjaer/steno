@@ -161,13 +161,13 @@
   z-index: 4;
   top: 55%;
   left: 46%;
-  transform: scale(1.05) rotate(-4deg); 
+  transform: rotate(-2deg); 
   transition: transform 0.2s ease;
 }
   
-.blå-knap:hover {
+.prov_igen_knap:hover {
   background-color: #286090;
-  transform: scale(1.05) rotate(-4deg); 
+  transform: scale(1.05) rotate(-2deg); 
 }
 
 /* Side 4 - Korrekt siden */
@@ -234,7 +234,7 @@
 /* Hjerneside 3 */
 .baggrundsbillede{
     position: relative;
-    background-image: url('/img/hjernen/regnestykke2.png');
+    background-image: url('/img/hjernen/regnestykke2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
