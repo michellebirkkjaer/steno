@@ -207,11 +207,11 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+    transition: transform 0.2s ease;
 }
 
 #ok_knap img {
     width: 7rem;
-    transition: transform 0.2s ease;
 }
 
 #ok_knap:hover{
