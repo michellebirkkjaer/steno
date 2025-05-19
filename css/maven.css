@@ -122,6 +122,7 @@
     top: 88.5%;    
     left: 80%;          
     width: 15rem;
+    transition: transform 0.2s ease;
 } 
 .gaet:hover{
   transform: scale(1.05);
@@ -228,7 +229,6 @@
   }
 
 
-
   /* forkert svar side */
   .forkert{
     background-image: url(/img/maven/maveside_forkert.webp);
@@ -255,6 +255,7 @@
     z-index: 4;
     top: 80%;
     left: 30%;
+    transition: transform 0.2s ease;
   }
 
 .proev_igen:hover {
@@ -277,6 +278,7 @@
   z-index: 4;
   top: 80%;
   left: 46%;
+  transition: transform 0.2s ease;
 }
 
     
