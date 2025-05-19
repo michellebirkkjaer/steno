@@ -227,6 +227,7 @@
    
   .afslut_knappen:hover {
     transform: scale(1.05);
+    background-color: #b53e33;
 }
 
 .prøv_igen_knap {
@@ -246,8 +247,9 @@
     transition: transform 0.2s ease;
   }
 
-  .prøv_igen_knap:hover {
+.prøv_igen_knap:hover {
     transform: scale(1.05);
+    background-color: #286090;
 }
 
 .gå_til_spil_knap {
