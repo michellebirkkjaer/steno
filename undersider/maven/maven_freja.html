@@ -7,60 +7,67 @@
      <link rel="stylesheet" href="/css/generelt.css">
     <title>Maven Freja</title>
 </head>
+
 <body>
 
+  <section class="page-flip-overlay" id="pageFlip"></section>
+
   <section class="freja">
-  <a href="/undersider/maven/maven_mads.html" class="pil_knap">
-  <img src="/img/maven/pil_højre.webp" alt="pil" class="højre">
-  </a>
+    <a href="/undersider/maven/maven_mads.html" class="pil_knap">
+    <img src="/img/maven/pil_højre.webp" alt="pil" class="højre">
+    </a>
 
-  <a href="/undersider/maven/maven_villads.html" class="pil_knap">
-  <img src="/img/maven/pil_venstre.webp" alt="pil" class="venstre">
-  </a>
-</section>
+    <a href="/undersider/maven/maven_villads.html" class="pil_knap">
+    <img src="/img/maven/pil_venstre.webp" alt="pil" class="venstre">
+    </a>
+  </section>
 
-<section class="knap_section">
-  <a href="/index.html">
-  <img src="/img/generelt/afslut_spil_knap.webp" alt="Knappen til afslut spil" class="afslut_spil_knap">
-  </a>
-</section>
+  <audio id="klik_lyd" src="/img/maven/vend_papir.mp4" preload="auto"></audio>
 
-    
-<!-- POP UP -->
-     <!-- Knap til at indtaste navn  -->
-<section class="popup">
-  <button id="submitGuess" aria-label="Indtast navn">
-    <img src="/img/generelt/gaet_her_knap.webp" alt="Stykke tape med gæt her" class="gaet">
-  </button>
-</section>
+  <section class="knap_section">
+    <a href="/index.html">
+    <img src="/img/generelt/afslut_spil_knap.webp" alt="Knappen til afslut spil" class="afslut_spil_knap">
+    </a>
+  </section>
 
-<!-- Overlay -->
-<section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
-  <img src="/img/maven/overlay_pop_up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn"/>
+      
+  <!-- POP UP -->
+      <!-- Knap til at indtaste navn  -->
+  <section class="popup">
+    <button id="submitGuess" aria-label="Indtast navn">
+      <img src="/img/generelt/gaet_her_knap.webp" alt="Stykke tape med gæt her" class="gaet">
+    </button>
+  </section>
 
-  <!-- formen hvor brugeren indtaster svar -->
-  <form id="svar_form">
-    <label for="bruger_svar" hidden>Indtast svar</label>
+  <!-- Overlay -->
+  <section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
+    <img src="/img/maven/overlay_pop_up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn"/>
 
-  <!-- Inputfelt -->
-  <input type="text" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
+    <!-- formen hvor brugeren indtaster svar -->
+    <form id="svar_form">
+      <label for="bruger_svar" hidden>Indtast svar</label>
 
-  <!-- OK-knappen -->
-  <button type="submit" id="ok_knap" aria-label="Bekræft svar">
-    <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
-  </button>
+    <!-- Inputfelt -->
+    <input type="text" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
 
-  <!-- Luk-knappen -->
-  <button type="button" id="luk_knap" aria-label="Luk">
-    <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
-  </button>
-</form>
-</section>
+    <!-- OK-knappen -->
+    <button type="submit" id="ok_knap" aria-label="Bekræft svar">
+      <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
+    </button>
 
-<script src="/features/popup.js"></script>  
-<script src="/features/overlay_luk.js"></script> 
-<script src="/features/inaktivitet_3min.js"></script> 
+    <!-- Luk-knappen -->
+    <button type="button" id="luk_knap" aria-label="Luk">
+      <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
+    </button>
+  </form>
+  </section>
+
+  <script src="/features/popup.js"></script>  
+  <script src="/features/overlay_luk.js"></script> 
+  <script src="/features/inaktivitet_3min.js"></script> 
 
   </section>
+
+  <script src="/features/vend_side_lyd.js"></script>
 </body>
 </html>
