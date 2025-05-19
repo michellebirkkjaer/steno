@@ -1,11 +1,11 @@
 "use strict";
 
-let inactivityTimer;
+let inaktivitetsTimer;
 
 // Funktion til at nulstille timeren
-function resetInactivityTimer() {
-    clearTimeout(inactivityTimer);
-    inactivityTimer = setTimeout(() => {
+function nulstilInaktivitetsTimer() {
+    clearTimeout(inaktivitetsTimer);
+    inaktivitetsTimer = setTimeout(() => {
         // Nulstil overlay-status
         sessionStorage.removeItem("overlaySeen");
         // Gå til forsiden (med overlay igen)
@@ -15,8 +15,10 @@ function resetInactivityTimer() {
 
 // Start timer og tilføj event listeners
 window.addEventListener("DOMContentLoaded", () => {
-    resetInactivityTimer();
+    nulstilInaktivitetsTimer();
     ["click", "mousemove", "keydown", "touchstart"].forEach(event => {
-        document.addEventListener(event, resetInactivityTimer);
+        document.addEventListener(event, nulstilInaktivitetsTimer);
     });
 });
+
+
