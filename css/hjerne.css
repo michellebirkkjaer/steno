@@ -194,6 +194,11 @@
   transform: rotate(6deg);
 }
 
+.afslut_knappen:hover {
+  background-color: #b53e33;
+  transform: scale(1.05);
+}
+
 
 /* Start igen knap */
 .start_igen_knap {
@@ -212,6 +217,11 @@
   top: 70%;
   left:29%;
   transform: rotate(6deg);
+}
+
+.start_igen_knap:hover {
+  background-color: #286090;
+  transform: scale(1.05);
 }
 
 /* Hjerneside 3 */
