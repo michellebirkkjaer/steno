@@ -339,10 +339,10 @@
 
 .kan_du_løse_dette_regnestykke {
   position: absolute;
-  top: 1%;
-  left: 52%;
+  top: 2%;
+  left: 53%;
   transform: translateX(-50%);
-  width: 60vw; /* 30% af viewport-bredden */
-  max-width: 100%; /* Undgå at den bliver for stor på små skærme */
-  z-index: 10000; /* Sikrer at den er over alt andet */
+  width: 54vw;
+  max-width: 100%; 
+  z-index: 10000; 
 }
