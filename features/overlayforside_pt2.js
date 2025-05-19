@@ -3,9 +3,9 @@
 const overlay = document.getElementById('overlay');
 
 if (!sessionStorage.getItem('overlaySeen')) {
-  overlay.classList.remove('hidden');
+  overlay.classList.remove('hidden'); // Gør overlay synligt
 } else {
-  overlay.remove(); // Hvis set, fjern det helt
+  overlay.remove(); // Fjern overlay helt, hvis det allerede er set
 }
 
 // Funktion: Fjern overlay med animation
