@@ -19,6 +19,7 @@
     top: 70%;    
     left: 57%;          
     width: 15rem;
+    transition: transform 0.2s ease;
 }
 
 .gaa_til_spil:hover{
@@ -40,6 +41,7 @@
     top: 82%;    
     left: 40%;          
     width: 20rem;
+    transition: transform 0.2s ease;
 }
 
 .start:hover{
@@ -92,6 +94,7 @@
     top: 40%;    
     left: 82%;          
     width: 20rem;
+    transition: transform 0.2s ease;
 }
 .højre:hover{
   transform: scale(1.05);
@@ -102,6 +105,7 @@
     top: 40%;    
     right: 82%;          
     width: 20rem;
+    transition: transform 0.2s ease;
 }
 .venstre:hover{
   transform: scale(1.05);
@@ -112,6 +116,7 @@
     top: 85%;    
     right: 80%;          
     width: 15rem;
+    transition: transform 0.2s ease;
 }
 .afslut_spil:hover{
   transform: scale(1.05);
@@ -206,6 +211,7 @@
 
 #ok_knap img {
     width: 7rem;
+    transition: transform 0.2s ease;
 }
 
 #ok_knap:hover{
@@ -320,6 +326,7 @@
     z-index: 4;
     top: 70%;
     left: 43%;
+    transition: transform 0.2s ease;
   }
     
   .proev_igen_korrekt:hover {
@@ -343,6 +350,7 @@
     z-index: 4;
     top: 70%;
     left: 59%;
+    transition: transform 0.2s ease;
   }
     
   .afslut_korrekt:hover {
