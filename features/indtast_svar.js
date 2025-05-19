@@ -1,17 +1,11 @@
 "use strict";
-
 // Vent med at køre JavaScript, indtil hele HTML'en er indlæst
 document.addEventListener("DOMContentLoaded", () => {
     
-// Find knappen, som brugeren klikker på for at vise overlayet
+// Finder kanpper og overlay billedet i html'en
 const indtastKnap = document.getElementById("indtast_knap");
-
-// Find selve overlay-sektionen med billedet
 const overlayBillede = document.getElementById("overlay_billede");
-
-// Finder luk-knappen
 const lukKnap = document.getElementById("luk_knap");
-
 const okKnap = document.getElementById("ok_knap");
 const svarInput = document.getElementById("svar_input");
 const forkertOverlay = document.getElementById("forkert_overlay");
@@ -21,7 +15,6 @@ const forkertOverlay = document.getElementById("forkert_overlay");
 indtastKnap.addEventListener("click", () => {
   overlayBillede.removeAttribute("hidden");
 });
- 
 // Skjul overlay når man klikker på luk-knappen
 lukKnap.addEventListener("click", () => {
     overlayBillede.setAttribute("hidden", true);
@@ -30,7 +23,7 @@ lukKnap.addEventListener("click", () => {
 // Tjek svaret
 okKnap.addEventListener("click", (event) => {
   event.preventDefault(); // Stopper siden fra at reloade
-
+  
   const brugerSvar = svarInput.value.trim();
   const korrektSvar = "122";
 
