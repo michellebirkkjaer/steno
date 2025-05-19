@@ -48,3 +48,6 @@ provIgenKnap.addEventListener("click", () => {
   location.reload(); // Genindlæs siden fra starten 
 });
 });
+
+
+

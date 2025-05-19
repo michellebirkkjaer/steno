@@ -28,11 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Tjek svaret
     okKnap.addEventListener("click", (event) => {
         event.preventDefault(); // <-- Dette stopper formen i at genindlæse siden
-  
-        const brugerSvar = svarInput.value.trim();
         // sikrer at brugeren får korrekt svar, selv hvis der er stavefejl i "Villads"
+       
+        const brugerSvar = svarInput.value.trim();
         const korrektSvar = ["Villads", "villads", "vilads", "Vilads", "villas", "Villas"];
-  
         if (korrektSvar.includes(brugerSvar)) {
             window.location.href = "maven_korrekt.html";
         } else {
