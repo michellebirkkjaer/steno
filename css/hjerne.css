@@ -192,6 +192,7 @@
   top: 72%;
   left: 46%;
   transform: rotate(6deg);
+  transition: transform 0.2s ease;
 }
 
 .afslut_knappen:hover {

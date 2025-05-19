@@ -222,6 +222,7 @@
     top: 72%;
     left: 46%;
     margin-left: 1rem;
+    transition: transform 0.2s ease;
   }
    
   .afslut_knappen:hover {
@@ -242,36 +243,19 @@
     top: 70%;
     left:29%;
     margin-right: 1rem;
+    transition: transform 0.2s ease;
   }
 
   .prøv_igen_knap:hover {
     transform: scale(1.05);
 }
 
-
-
-
-/* Generelle knapper */
-
-/* .tilbage_forside_knap{
-    position: absolute;
-    top: 55rem;
-    left: 1rem;
-    width: 14rem;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.tilbage_forside_knap:hover {
-    transform: scale(1.05);
-} */
-
 .gå_til_spil_knap {
     position: absolute;  
     top: 65%;    
     left: 60%;          
     width: 12rem;
+    transition: transform 0.2s ease;
 }
 
 .gå_til_spil_knap:hover {
@@ -280,22 +264,9 @@
 
 .start_spillet_knap {
     width: 17rem;
+    transition: transform 0.2s ease;
 }
 
 .start_spillet_knap:hover {
     transform: scale(1.05);
 }
-
-/* .afslut_spil_knap{
-    position: absolute;
-    top: 55rem;
-    left: 2rem;
-    width: 14rem;
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.afslut_spil_knap:hover {
-    transform: scale(1.05);
-} */
