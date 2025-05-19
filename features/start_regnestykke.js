@@ -1,11 +1,11 @@
 "use strict";
 
 const overlay = document.getElementById('overlay');
-const video = document.getElementById('background-audio');
+const audioElement = document.getElementById('background-audio');
 
 overlay.addEventListener('click', () => {
   overlay.style.display = 'none';
-  video.muted = false;
-  video.currentTime = 0;
-  video.play();
+  audioElement.muted = false;
+  audioElement.currentTime = 0;
+  audioElement.play();
 });
