@@ -125,6 +125,11 @@
     border: none;
     cursor: pointer;
     z-index: 2;
+    transition: transform 0.2s ease;
+}
+
+#ok_knap:hover {
+  transform: scale(1.05)
 }
 
 #ok_knap img {
@@ -156,13 +161,13 @@
   z-index: 4;
   top: 55%;
   left: 46%;
-  transform: scale(1.05); 
-  transform: rotate(-4deg);
+  transform: scale(1.05) rotate(-4deg); 
+  transition: transform 0.2s ease;
 }
   
 .blå-knap:hover {
   background-color: #286090;
-    
+  transform: scale(1.05) rotate(-4deg); 
 }
 
 /* Side 4 - Korrekt siden */
@@ -190,14 +195,14 @@
   cursor: pointer;
   z-index: 4;
   top: 72%;
-  left: 46%;
-  transform: rotate(6deg);
+  left: 48%;
+  transform: rotate(5deg);
   transition: transform 0.2s ease;
 }
 
 .afslut_knappen:hover {
   background-color: #b53e33;
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(5deg);
 }
 
 
@@ -215,14 +220,15 @@
   font-size: 1.8rem;
   cursor: pointer;
   z-index: 4;
-  top: 70%;
-  left:29%;
-  transform: rotate(6deg);
+  top: 69.5%;
+  left: 32%;
+  transform: rotate(5deg);
+  transition: transform 0.2s ease;
 }
 
 .start_igen_knap:hover {
   background-color: #286090;
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(5deg);
 }
 
 /* Hjerneside 3 */
