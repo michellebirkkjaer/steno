@@ -255,7 +255,6 @@
     z-index: 4;
     top: 80%;
     left: 30%;
-    transform: scale(1.05); 
   }
 
 .proev_igen:hover {
@@ -278,7 +277,6 @@
   z-index: 4;
   top: 80%;
   left: 46%;
-  transform: scale(1.05); 
 }
 
     
@@ -320,7 +318,6 @@
     z-index: 4;
     top: 70%;
     left: 43%;
-    transform: scale(1.05); 
   }
     
   .proev_igen_korrekt:hover {
@@ -344,7 +341,6 @@
     z-index: 4;
     top: 70%;
     left: 59%;
-    transform: scale(1.05); 
   }
     
   .afslut_korrekt:hover {
