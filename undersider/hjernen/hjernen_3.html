@@ -42,13 +42,18 @@
 
 
 
-     <button id="toggle-btn" aria-pressed="false" aria-label="Mute audio" >
+     <!-- <button id="toggle-btn" aria-pressed="false" aria-label="Mute audio" >
         <img id="btn-icon" src="/img/generelt/mute_horetelefoner.webp" alt="Speaker on" class="horetelefoner"/>
-      </button>
+      </button> -->
       <audio id="background-audio" autoplay muted preload="auto">
         <source src="/audio/distraktion.mp3" type="audio/mpeg" />
         Din browser understøtter ikke lyden.
       </audio>
+
+      <section id="overlay">
+        <img id="afspil_ikon" src="/img/hjerte/afspil_knap.webp" alt="Afspil video ikon">
+        <img src="/img/hjernen/kan_du_løse_dette_regnestykke.webp" alt="kan du løse dette regnestykke?" class="kan_du_løse_dette_regnestykke">
+      </section>
 
 
 
@@ -94,5 +99,6 @@
  <script src="/features/overlay_luk.js"></script> 
  <script src="/features/lyd.js"></script>
  <script src="/features/inaktivitet_3min.js"></script> 
+ <script src="/features/start_regnestykke.js"></script> 
 </body>
 </html>
