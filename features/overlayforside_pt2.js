@@ -31,6 +31,10 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Gør overlay fokuserbart og sæt fokus
+overlay.setAttribute('tabindex', '0');
+overlay.focus();
+
 // Klik/tast for at fjerne overlay
 overlay?.addEventListener('click', removeOverlay);
 overlay?.addEventListener('keydown', (e) => {
