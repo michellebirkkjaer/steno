@@ -49,7 +49,9 @@ provIgenKnap.addEventListener("click", () => {
 });
 });
 
-
+// Når hele HTML-dokumentet er indlæst (DOMContentLoaded), tilføjes der klik-events til to knapper:
+// Når brugeren klikker på knappen med id "afslut_knappen", sendes de tilbage til forsiden (index.html).
+// Når brugeren klikker på knappen med id "start_igen_knap", starter de forfra på siden "hjernen_1.html".
 window.addEventListener("DOMContentLoaded", function () {
   document.getElementById("afslut_knappen").addEventListener("click", function () {
     window.location.href = "index.html";
