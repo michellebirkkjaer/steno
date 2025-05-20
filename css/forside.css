@@ -1,13 +1,13 @@
-  /* Reset and base styling */
-  * {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
 
   html, body {
-    margin: 0; padding: 0; /* Fjerner standard margin og padding */
     height: 100%;
     width: 100%;
-    overflow: hidden; /* Skjuler scrollbars */
+    overflow: hidden;
   }
 
 /* Container fylder ca. 1512x982 pixels skærm */
@@ -17,42 +17,43 @@
     width: 1512px;
     max-width: 100vw;
     max-height: 100vh;
-    margin: 0 auto; /* Centrerer containeren horisontalt */
-    overflow: hidden; /* Skjuler alt indhold uden for container */
-    user-select: none; /* Forhindrer tekst/billede-markering */
+    margin: 0 auto; 
+    overflow: hidden;
+    user-select: none; 
   }
+
 /* Baggrundsbillede fylder hele containeren */
   #background-image {
-    position: absolute; /* Placerer billedet over hele containeren */
+    position: absolute; 
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Sørger for at billedet dækker uden at forvrænge */
+    object-fit: cover; 
     z-index: 0; /* Ligger bagerst i stakken */
   }
 
 /* Knap-container i 2x2 grid */  
 #buttons {
-    position: absolute; /* Placerer over baggrundsbilledet */
+    position: absolute; 
     top: 0; left: 0;
     width: 100%;
     height: 100%;
     display: grid; /* Grid layout */
     grid-template-columns: 1fr 1fr; /* To lige brede kolonner */
     grid-template-rows: 1fr 1fr; /* To lige høje rækker */
-    gap: 25px; /* Afstand mellem elementer */
-    padding: 40px 60px; /* Indvendig afstand */
-    z-index: 1; /* Ligger over baggrunden */
+    gap: 25px; 
+    padding: 40px 60px; 
+    z-index: 1; 
   }
   /* Små billedknapper uden baggrund */
   .button-img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Bevarer billedets proportioner */
-    border-radius: 0; /* Ingen afrundede hjørner */
-    box-shadow: none; /* Ingen skyggeeffekter */
-    background-color: transparent; /* Gennemsigtig baggrund */
-    cursor: pointer; /* Cursor ændres til hånd ved hover */
+    object-fit: contain;
+    border-radius: 0; 
+    box-shadow: none; 
+    background-color: transparent; 
+    cursor: pointer; 
     transition: transform 0.3s ease; /* Glidende animation ved hover/fokus */
     display: block;
   }
@@ -61,7 +62,8 @@
     outline: none;
     display: block;
   }
-/* Animation keyframes */
+
+  /* Animation keyframes */
 
 /* "Vinkende" hånd-animation (rotation) */
 @keyframes waveHand {
@@ -122,26 +124,25 @@
     width: 100%;
     height: 100%;
     background: rgba(255 255 255 / 0.25); /* Halvgennemsigtig hvid overlay */
-    backdrop-filter: blur(12px); /* Slører baggrunden bag overlayet */
+    backdrop-filter: blur(12px); 
     display: flex;
-    align-items: center; /* Centrerer tekst vertikalt */
-    justify-content: center; /* Centrerer tekst horisontalt */
+    align-items: center; 
+    justify-content: center; 
     cursor: pointer;
     z-index: 2; /* Øverst i stakken */
-    user-select: none; /* Forhindrer tekstmarkering */
-    -webkit-user-select: none; /* Safari-specifik understøttelse */
+    user-select: none; 
   }
 
   #overlay-text {
     font-size: 6rem;
     font-family: "Swanky and Moo Moo";
-    text-transform: uppercase; /* Store bogstaver */
+    text-transform: uppercase; 
     font-weight: 700;
     color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6); /* Sort glød bag teksten */
+    text-shadow: 0 0 10px rgba(0,0,0,0.6); 
     letter-spacing: 0.07em;
     user-select: none;
-    white-space: nowrap; /* Forhindrer linjeskift */
+    white-space: nowrap; 
   }
 
   .hidden {
