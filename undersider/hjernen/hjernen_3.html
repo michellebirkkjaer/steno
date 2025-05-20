@@ -14,26 +14,28 @@
     <link rel="stylesheet" href="/css/hjerne.css">
     <link rel="stylesheet" href="/css/generelt.css">
 </head>
+<!-- Billeder på forsiden -->
 <body class="baggrundsbillede">
-        <!-- TIL ALLE: Tilbage til forsiden knap - Husk at linke til css generelt, for at få den rigtige størrelse -->
     <section class="regnestykker">
          <article class="linje1">
-            <img src="/img/hjernen/30-1.webp" alt="" class="tal" id="forstetal">
-            <img src="/img/hjernen/minus.webp" alt="" class="tegn">
-            <img src="/img/hjernen/30.webp" alt="" class="tal" id="andettal">
-            <img src="/img/hjernen/plus.webp" alt="" class="tegn">
-            <img src="/img/hjernen/62.webp" alt="" class="tal" id="tredjetal">
+            <img src="/img/hjernen/30-1.webp" alt="Tallet 30" class="tal" id="forstetal">
+            <img src="/img/hjernen/minus.webp" alt="Minus tegn" class="tegn">
+            <img src="/img/hjernen/30.webp" alt="Tallet 30" class="tal" id="andettal">
+            <img src="/img/hjernen/plus.webp" alt="Plus tegn" class="tegn">
+            <img src="/img/hjernen/62.webp" alt="Tallet 62" class="tal" id="tredjetal">
         </article>
         <article class="linje2">
-            <img src="/img/hjernen/plus.webp" alt="" class="tegn">
-            <img src="/img/hjernen/venstre_parentes2.webp" alt="" class="tegn">
-            <img src="/img/hjernen/3.webp" alt="" class="tal fjerdetal">
-            <img src="/img/hjernen/gange.webp" alt="" class="tegn fjerdetal">
-            <img src="/img/hjernen/4.webp" alt="" class="tal fjerdetal">
-            <img src="/img/hjernen/hojre_parentes1.webp" alt="" class="tegn">
-            <img src="/img/hjernen/spørgsmaelstegn.webp" alt="" class="tal">
+            <img src="/img/hjernen/plus.webp" alt="plus tegn" class="tegn">
+            <img src="/img/hjernen/venstre_parentes2.webp" alt="Venstre parentes" class="tegn">
+            <img src="/img/hjernen/3.webp" alt="Tallet 3" class="tal fjerdetal">
+            <img src="/img/hjernen/gange.webp" alt="Gange tegn" class="tegn fjerdetal">
+            <img src="/img/hjernen/4.webp" alt="Tallet 4" class="tal fjerdetal">
+            <img src="/img/hjernen/hojre_parentes1.webp" alt="Højre parentes" class="tegn">
+            <img src="/img/hjernen/spørgsmaelstegn.webp" alt="Spørgsmålstegn" class="tal">
         </article>
     </section>
+
+    <!-- Tilbage til forsiden knappen -->
     <section class="knap_section">
             <a href="/index.html">
             <img class="afslut_spil_knap" src="/img/generelt/afslut_spil_knap.webp" alt="Afslut spil knap">
@@ -41,14 +43,12 @@
      </section>
 
 
-     <!-- <button id="toggle-btn" aria-pressed="false" aria-label="Mute audio" >
-        <img id="btn-icon" src="/img/generelt/mute_horetelefoner.webp" alt="Speaker on" class="horetelefoner"/>
-      </button> -->
       <audio id="background-audio" autoplay muted preload="auto">
         <source src="/audio/distraktion.mp3" type="audio/mpeg" />
         Din browser understøtter ikke lyden.
       </audio>
 
+    <!-- Overlayet af start på siden med lyd -->
       <section id="overlay">
         <img id="afspil_ikon" src="/img/hjerte/afspil_knap.webp" alt="Afspil video ikon">
         <img src="/img/hjernen/helt_korrekt_distraktioner.webp" alt="kan du løse dette regnestykke?" class="kan_du_løse_dette_regnestykke">
