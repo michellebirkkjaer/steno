@@ -10,7 +10,8 @@
 
 <body>
 
-  <section class="page-flip-overlay" id="pageFlip"></section>
+  <section class="page-flip-overlay" id="pageFlip">
+  </section>
 
   <section class="freja">
     <a href="/undersider/maven/maven_mads.html" class="pil_knap">
@@ -41,33 +42,31 @@
 
   <!-- Overlay -->
   <section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
-    <img src="/img/maven/overlay_pop_up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn" autocomplete="new-password"/>
+      <img src="/img/maven/overlay_pop_up.webp" alt="En side i en bog hvor man indtaster sit svar " class="overlay_indtast_navn"/>
 
-    <!-- formen hvor brugeren indtaster svar -->
-    <!-- autocomplete off gør at browseren ikke viser tidligere indtastede svar -->
-    <form id="svar_form" autocomplete="off">
-      <label for="bruger_svar" hidden>Indtast svar</label>
+      <!-- formen hvor brugeren indtaster svar -->
+      <!-- autocomplete off gør at browseren ikke viser tidligere indtastede svar -->
+      <form id="svar_form" autocomplete="off">
+        <label for="svar_input" hidden>Indtast svar</label>
 
-    <!-- Inputfelt -->
-    <input type="text" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" autocomplete="off" />
+      <!-- Inputfelt -->
+      <input type="text" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" autocomplete="off" />
 
-    <!-- OK-knappen -->
-    <button type="submit" id="ok_knap" aria-label="Bekræft svar">
-      <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
-    </button>
+      <!-- OK-knappen -->
+      <button type="submit" id="ok_knap" aria-label="Bekræft svar">
+        <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
+      </button>
 
-    <!-- Luk-knappen -->
-    <button type="button" id="luk_knap" aria-label="Luk">
-      <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
-    </button>
-  </form>
+      <!-- Luk-knappen -->
+      <button type="button" id="luk_knap" aria-label="Luk">
+        <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
+      </button>
+    </form>
   </section>
 
   <script src="/features/popup.js"></script>  
   <script src="/features/overlay_luk.js"></script> 
   <script src="/features/inaktivitet_3min.js"></script> 
-
-  </section>
 
   <script src="/features/vend_side_lyd.js"></script>
 </body>

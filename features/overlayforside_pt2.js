@@ -36,8 +36,8 @@ overlay.setAttribute('tabindex', '0');
 overlay.focus();
 
 // Klik/tast for at fjerne overlay
-overlay?.addEventListener('click', removeOverlay);
-overlay?.addEventListener('keydown', (e) => {
+overlay.addEventListener('click', removeOverlay);
+overlay.addEventListener('keydown', (e) => {
     if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         removeOverlay();

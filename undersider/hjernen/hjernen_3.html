@@ -62,26 +62,28 @@
     </section>
 
     <!-- Overlay -->
-<section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
+ <section id="overlay_billede" hidden> <!-- Hidden bruges så at billedet ikke vises fra starten -->
     <img src="/img/hjernen/indtast_svar_bog.webp" alt="En side i en bog hvor man indtaster sit svar svar" class="overlay_indtast_svar"/>
 
     <!-- Interaktiv form ovenpå -->
     <form id="svar_form">
-    <label for="bruger_svar" hidden>Indtast svar</label>
+        <label for="svar_input" hidden>Indtast svar</label>
 
-    <!-- Inputfelt -->
-    <input type="number" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
+        <!-- Inputfelt -->
+        <input type="number" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
 
-    <!-- OK-knap som billede -->
-    <button type="submit" id="ok_knap" aria-label="Bekræft svar">
-      <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
-    </button>
+        <!-- OK-knap som billede -->
+        <button type="submit" id="ok_knap" aria-label="Bekræft svar">
+        <img src="/img/hjernen/ok_knap.webp" alt="Bekræft" />
+        </button>
 
-    <!-- Luk-knap som billede -->
-    <button type="button" id="luk_knap" aria-label="Luk">
-      <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
-    </button>
-  </form>
+        <!-- Luk-knap som billede -->
+        <button type="button" id="luk_knap" aria-label="Luk">
+        <img src="/img/hjernen/kryds.webp" alt="Luk overlay" />
+        </button>
+    </form>
+ </section>
+
 
  <!-- Forkert svar-overlay (skjult fra start) -->
  <section id="forkert_overlay" hidden>
