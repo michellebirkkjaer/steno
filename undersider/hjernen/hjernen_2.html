@@ -35,11 +35,12 @@
     <img src="/img/hjernen/indtast_svar_bog.webp" alt="En side i en bog hvor man indtaster sit svar svar" class="overlay_indtast_svar"/>
 
     <!-- Interaktiv form ovenpå -->
-    <form id="svar_form">
+    <!-- autocomplete off skjuler tidligere indtastede svar  -->
+    <form id="svar_form" autocomplete="off">
     <label for="bruger_svar" hidden>Indtast svar</label>
 
     <!-- Inputfelt -->
-    <input type="number" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" />
+    <input type="number" id="svar_input" class="bruger_svar" name="bruger_svar" required placeholder="Indtast svar her" autocomplete="off"/>
 
     <!-- OK-knap som billede -->
     <button type="submit" id="ok_knap" aria-label="Bekræft svar">
