@@ -1,3 +1,5 @@
+"use strict";
+
 const lyd = document.getElementById("klik_lyd");
 
 document.querySelectorAll(".pil_knap").forEach(link => {
