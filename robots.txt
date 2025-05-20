@@ -1,0 +1,3 @@
+user-agent: *
+disallow: 
+sitemap: https://steno.michellebirkkjaer.dk/sitemap.xml
